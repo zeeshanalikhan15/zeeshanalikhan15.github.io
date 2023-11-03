@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>porfolio underconstruction</h1>
         <p>
-          I have started to learn react very late in my career. please bear with me. thanks
+          I have started to learn front-end dev <b>very</b> late in my career. please bear with me. thanks
         </p>
         <a
           className="App-link"
