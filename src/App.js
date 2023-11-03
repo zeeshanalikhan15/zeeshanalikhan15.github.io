@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logo1.svg';
 import './App.css';
 
 function App() {
@@ -6,16 +6,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>porfolio underconstruction</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          I have started to learn react very late in my career. please bear with me. thanks
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.linkedin.com/in/zeeshanalikhan15/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          My Linkedin
         </a>
       </header>
     </div>
