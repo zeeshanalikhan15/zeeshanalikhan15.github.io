@@ -1,4 +1,4 @@
-# How to pusblish a porject site for free on Github using Vite React  
+# How to pusblish a profile resume porject site for free on Github using Vite React  
   
   
 ## Step 1: Create a Vite React App
@@ -126,24 +126,25 @@ Now, you have a Vite-powered React app with the selected project name, framework
 
 1. On GitHub, you'll now have two branches: `main` and `prod`. Go to your project's repository on GitHub.
 
-   ![image](https://github.com/zeeshanalikhan15/my-resume-test-app/assets/31096902/6a03f571-7c19-456a-a215-1ad49614984c)
+   ![image](https://github.com/zeeshanalikhan15/zeeshanalikhan15.github.io/assets/31096902/941418a4-d77d-47e6-bcff-6590716400ff)
 
 
 2. In the repository settings, navigate to the "GitHub Pages" section.
 
-   ![image](https://github.com/zeeshanalikhan15/my-resume-test-app/assets/31096902/3d217322-2981-40de-b182-c0f94fecc62a)
+   ![image](https://github.com/zeeshanalikhan15/zeeshanalikhan15.github.io/assets/31096902/9277eb05-cb8a-42e2-bf54-67e488e1ab1a)
 
 
 3. Under "Source," select the `prod` branch and choose `/root` from the dropdown. Save the configuration.
 
-   ![image](https://github.com/zeeshanalikhan15/my-resume-test-app/assets/31096902/cb4eb33b-a40f-4e21-9705-66e248212e74)
+   ![image](https://github.com/zeeshanalikhan15/zeeshanalikhan15.github.io/assets/31096902/f9169c3a-5743-4bf0-adf6-7d77b509ba16)
 
 
 ## Step 4: Publish Your Website
 
 1. Make a small change in your React app (e.g., edit `App.jsx`).
 
-   ![image](https://github.com/zeeshanalikhan15/my-resume-test-app/assets/31096902/bef88146-66eb-46da-8642-3f6f9150a8e1)
+   ![image](https://github.com/zeeshanalikhan15/zeeshanalikhan15.github.io/assets/31096902/7cab89d2-9322-4099-a5d0-343cd0d06c7f)
+
 2. push changes to main
 
    ```bash
@@ -158,6 +159,6 @@ Now, you have a Vite-powered React app with the selected project name, framework
    npm run deploy:prod
    ```
 
-In a few minutes, your website will be up and running at the URL: `https://username.github.io/repo-name`.
+In a few minutes, your website will be up and running at the URL: `https://username.github.io`.
 
 Now, your local setup is ready to publish, and any changes you make to your app can be quickly deployed to your GitHub Pages site by running the `npm run deploy:prod` command.
