@@ -136,7 +136,7 @@ Now, you have a Vite-powered React app with the selected project name, framework
 
 3. Under "Source," select the `prod` branch and choose `/root` from the dropdown. Save the configuration.
 
-   ![image](https://github.com/zeeshanalikhan15/zeeshanalikhan15.github.io/assets/31096902/f9169c3a-5743-4bf0-adf6-7d77b509ba16)
+   ![image](https://github.com/zeeshanalikhan15/zeeshanalikhan15.github.io/assets/31096902/96f57cc8-4f5c-409e-bf03-22a69e77ef89)
 
 
 ## Step 4: Publish Your Website
