@@ -4,6 +4,8 @@ import Navigation from './components/navigation/Navigation'
 import Section from './components/section/Section'
 import ContactInfo from './components/contact/ContactInfo'
 import WorkExperience from './components/work/WorkExperience'
+import Projects from './components/projects/Projects'
+import Technologies from './components/tech/Technologies'
 
 function App() {
  
@@ -14,22 +16,8 @@ function App() {
       <Header />
       <Navigation />
       <WorkExperience/>
-      <Section
-        id="projects"
-        title="Projects"
-        content={
-          // Your projects details go here
-          <p>Projects content goes here</p>
-        }
-      />
-      <Section
-        id="technologies"
-        title="Technologies"
-        content={
-          // Your technologies details go here
-          <p>Technologies content goes here</p>
-        }
-      />
+      <Projects/>
+      <Technologies/>
       <Section
         id="education"
         title="Education"
