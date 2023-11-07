@@ -1,0 +1,25 @@
+/* WorkExperience.css */
+
+.technologies {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+  .technologies h2 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .technologies p {
+    margin: 0 0 10px 0;
+  }
+
+  .technologies ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .technologies li {
+    margin-bottom: 5px;
+  }

@@ -7,7 +7,7 @@ const WorkExperience = () => {
       id="work-experience"
       title="Work Experience"
       content={
-        <div>
+        <div className="work-experience">
           <p><strong>Call Center Developer @ virtualQ</strong></p>
           <p>Aug 2018 – Present</p>
           <p>virtualQ, Remote - Freelance</p>

@@ -1,5 +1,5 @@
 import Section from '../section/Section' // Import the Section component
-
+import './Technologies.css'
 const Technologies = () => {
   return (
     <Section
@@ -41,25 +41,16 @@ const Technologies = () => {
           </div>
 
           <div>
-            <h3>Network Switches</h3>
-            <p>PureConnect / Genesys / ININ Interactive Intelligence Contact Center</p>
-            <p>ININ IceLib Client-side SDK implementation to view all events from the switch in the form of watches and custom notification.</p>
-          </div>
+            <h2>Network Switches</h2>
 
-          <div>
-            <h3>University Education</h3>
+            <h3>PureConnect / Genesys / ININ Interactive Intelligence Contact Center</h3>
             <p>
-              BS in Computer Science
+              ININ IceLib Client-side SDK implementation to view all events from the switch in the form of watches and custom notification.
             </p>
-            <p>National University of Computer and Emerging Science, FAST</p>
-            <p>Lahore, Pakistan, 2010 - 2014</p>
-          </div>
 
-          <div>
-            <h3>University Courses</h3>
-            <p>
-              Artificial Intelligence, Computer Programming, Data Structures, Design & Analysis of Algorithms, Human-Computer Interaction, Object-Oriented Analysis & Design, Software Engineering, Theory of Automata, Advanced Database Systems
-            </p>
+            <h3>Avaya Elite (AES, CM, Tsapi/ASAI/DMCC, CIE - customer interaction express, AACC - Avaya Aura Contact center), Avaya CIE</h3>
+            <p>Avaya Tsapi and ASAI protocol implementation to view all events from the Avaya switch.</p>
+
           </div>
         </div>
       }
