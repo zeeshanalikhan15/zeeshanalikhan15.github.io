@@ -1,4 +1,4 @@
-import './Section'
+import './Section.css'
 
 function Section({ id, title, content }) {
   return (

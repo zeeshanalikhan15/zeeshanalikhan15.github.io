@@ -41,14 +41,14 @@ const Technologies = () => {
           </div>
 
           <div>
-            <h2>Network Switches</h2>
+            <h3>Network Switches</h3>
 
-            <h3>PureConnect / Genesys / ININ Interactive Intelligence Contact Center</h3>
+            <h4>PureConnect / Genesys / ININ Interactive Intelligence Contact Center</h4>
             <p>
               ININ IceLib Client-side SDK implementation to view all events from the switch in the form of watches and custom notification.
             </p>
 
-            <h3>Avaya Elite (AES, CM, Tsapi/ASAI/DMCC, CIE - customer interaction express, AACC - Avaya Aura Contact center), Avaya CIE</h3>
+            <h4>Avaya Elite (AES, CM, Tsapi/ASAI/DMCC, CIE - customer interaction express, AACC - Avaya Aura Contact center), Avaya CIE</h4>
             <p>Avaya Tsapi and ASAI protocol implementation to view all events from the Avaya switch.</p>
 
           </div>

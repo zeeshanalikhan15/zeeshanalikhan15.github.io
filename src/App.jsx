@@ -1,7 +1,6 @@
 import './App.css'
 import Header from './components/header/Header'
 import Navigation from './components/navigation/Navigation'
-import Section from './components/section/Section'
 import ContactInfo from './components/contact/ContactInfo'
 import WorkExperience from './components/work/WorkExperience'
 import Projects from './components/projects/Projects'

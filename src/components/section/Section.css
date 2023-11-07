@@ -2,7 +2,9 @@ section {
     padding: 20px;
   }
   
-  h2 {
+  section h2 {
     color: #333;
+    background-color: lightblue;
+    margin: 0; /* Remove default margin */
   }
   
