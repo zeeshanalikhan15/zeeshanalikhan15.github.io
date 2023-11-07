@@ -6,6 +6,12 @@ SCRIPT_FILENAME=$(basename "$0")
 # Run the Vite build command
 npm run build
 
+# Check if there are uncommitted changes in the 'main' branch
+if [[ $(git diff --exit-code) ]]; then
+  # Stash the changes in 'main'
+  git stash
+fi
+
 # Create or checkout a production branch
 git checkout -B prod
 
@@ -30,3 +36,7 @@ git checkout main
 
 # Delete the local 'prod' branch
 git branch -D prod
+
+if [[ $(git stash list) ]]; then
+  git stash pop
+fi
