@@ -131,7 +131,7 @@ Now, you have a Vite-powered React app with the selected project name, framework
 
 2. In the repository settings, navigate to the "GitHub Pages" section.
 
-   ![image](https://github.com/zeeshanalikhan15/zeeshanalikhan15.github.io/assets/31096902/9277eb05-cb8a-42e2-bf54-67e488e1ab1a)
+   ![image](https://github.com/zeeshanalikhan15/zeeshanalikhan15.github.io/assets/31096902/a625d1dc-5bef-47ca-ae9f-051640144890)
 
 
 3. Under "Source," select the `prod` branch and choose `/root` from the dropdown. Save the configuration.
