@@ -1,5 +1,6 @@
 section {
     padding: 20px;
+    position: relative;
   }
   
   section h2 {
@@ -7,4 +8,7 @@ section {
     background-color: lightblue;
     margin: 0; /* Remove default margin */
   }
-  
+
+  section h2 a {
+    position: absolute; right: 0;
+  }
