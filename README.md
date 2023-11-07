@@ -66,12 +66,18 @@ Now, you have a Vite-powered React app with the selected project name, framework
 
    ```bash
    #!/bin/bash
-
+    
     # Get the current script's filename (i.e., 'deploy.sh')
     SCRIPT_FILENAME=$(basename "$0")
     
     # Run the Vite build command
     npm run build
+    
+    # Check if there are uncommitted changes in the 'main' branch
+    if [[ $(git diff --exit-code) ]]; then
+      # Stash the changes in 'main'
+      git stash
+    fi
     
     # Create or checkout a production branch
     git checkout -B prod
@@ -97,6 +103,10 @@ Now, you have a Vite-powered React app with the selected project name, framework
     
     # Delete the local 'prod' branch
     git branch -D prod
+    
+    if [[ $(git stash list) ]]; then
+      git stash pop
+    fi
    ```
 
 3. In your `package.json`, add a `"deploy:prod"` script in the `"scripts"` section, pointing it to the `deploy.sh` file:
