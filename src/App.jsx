@@ -6,6 +6,7 @@ import ContactInfo from './components/contact/ContactInfo'
 import WorkExperience from './components/work/WorkExperience'
 import Projects from './components/projects/Projects'
 import Technologies from './components/tech/Technologies'
+import Education from './components/education/Education'
 
 function App() {
  
@@ -13,37 +14,14 @@ function App() {
   return (
     <>    
       <div>
-      <Header />
-      <Navigation />
-      <WorkExperience/>
-      <Projects/>
-      <Technologies/>
-      <Section
-        id="education"
-        title="Education"
-        content={
-          // Your education details go here
-          <p>Education content goes here</p>
-        }
-      />
-      <Section
-        id="university-projects"
-        title="University Projects"
-        content={
-          // Your university project details go here
-          <p>University projects content goes here</p>
-        }
-      />
-      <Section
-        id="blogs"
-        title="Blogs"
-        content={
-          // Your blogs go here
-          <p>Blogs content goes here</p>
-        }
-      />
-      <ContactInfo />
-    </div>
+        <Header />
+        <Navigation />
+        <WorkExperience/>
+        <Projects/>
+        <Technologies/>
+        <Education/>
+        <ContactInfo />
+      </div>
     </>
   )
 }

@@ -1,4 +1,5 @@
 import Section from '../section/Section' // Import the Section component
+import './Projects.css'
 
 const Projects = () => {
   return (
