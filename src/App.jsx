@@ -1,35 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/header/Header'
+import Navigation from './components/navigation/Navigation'
+import Section from './components/section/Section'
+import ContactInfo from './components/contact/ContactInfo'
+import WorkExperience from './components/work/WorkExperience'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>    
-    <h1>added change 2nd time</h1>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p>this is testing new resume way</p>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Navigation />
+      <WorkExperience/>
+      <Section
+        id="projects"
+        title="Projects"
+        content={
+          // Your projects details go here
+          <p>Projects content goes here</p>
+        }
+      />
+      <Section
+        id="technologies"
+        title="Technologies"
+        content={
+          // Your technologies details go here
+          <p>Technologies content goes here</p>
+        }
+      />
+      <Section
+        id="education"
+        title="Education"
+        content={
+          // Your education details go here
+          <p>Education content goes here</p>
+        }
+      />
+      <Section
+        id="university-projects"
+        title="University Projects"
+        content={
+          // Your university project details go here
+          <p>University projects content goes here</p>
+        }
+      />
+      <Section
+        id="blogs"
+        title="Blogs"
+        content={
+          // Your blogs go here
+          <p>Blogs content goes here</p>
+        }
+      />
+      <ContactInfo />
+    </div>
     </>
   )
 }
