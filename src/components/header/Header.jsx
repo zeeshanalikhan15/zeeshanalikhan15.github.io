@@ -4,7 +4,8 @@ function Header() {
   return (
     <header>
       <h1>Zeeshan Ali Khan</h1>
-      <p>Principal Software Engineer</p>
+      <p>Software Engineer</p>
+      <p>VoIP & Contact Center Solution Specialist: Aligning Advanced Communication Systems with Business Needs</p>
     </header>
   );
 }
