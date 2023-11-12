@@ -25,11 +25,11 @@ function Navigation() {
 
       {showMenu && 
         <nav className="md:hidden">
-          <a href="#work-experience"  className="block">Work Experience</a>
-          <a href="#projects" className="block">Projects</a>
-          <a href="#technologies" className="block">Technologies</a>
-          <a href="#education" className="block">Education</a>
-          <a href="#contact" className="block">Contact</a>
+          <a href="#work-experience"  className="block hover:bg-sky-500 hover:text-white">Work Experience</a>
+          <a href="#projects" className="block hover:bg-sky-500 hover:text-white">Projects</a>
+          <a href="#technologies" className="block hover:bg-sky-500 hover:text-white">Technologies</a>
+          <a href="#education" className="block hover:bg-sky-500 hover:text-white">Education</a>
+          <a href="#contact" className="block hover:bg-sky-500 hover:text-white">Contact</a>
         </nav>}
     </div>
   );
