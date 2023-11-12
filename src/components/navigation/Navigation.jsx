@@ -7,8 +7,8 @@ function Navigation() {
   return (
     <div>
       <br/>
-      <nav className="hidden md:flex underline ml-6">
-        <a href="#work-experience"  className="block hover:bg-sky-500 hover:text-white">Work Experience</a>
+      <nav className="hidden md:flex underline bg-slate-100 ml-5 mr-5">
+        <a href="#work-experience"  className="block hover:bg-sky-500 hover:text-white ml-2">Work Experience</a>
         <a href="#projects" className="block hover:bg-sky-500 hover:text-white ml-4">Projects</a>
         <a href="#technologies" className="block hover:bg-sky-500 hover:text-white ml-4">Technologies</a>
         <a href="#education" className="block hover:bg-sky-500 hover:text-white ml-4">Education</a>
@@ -16,7 +16,7 @@ function Navigation() {
       </nav>
 
       
-      <nav className="md:hidden text-left underline pl-5 border ml-5 mr-5 ">
+      <nav className="md:hidden text-left underline bg-slate-100 pl-5 ml-5 mr-5 ">
         <a href="#work-experience"  className="block hover:bg-sky-500 hover:text-white">Work Experience</a>
         <a href="#projects" className="block hover:bg-sky-500 hover:text-white">Projects</a>
         <a href="#technologies" className="block hover:bg-sky-500 hover:text-white">Technologies</a>
