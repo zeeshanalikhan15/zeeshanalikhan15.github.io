@@ -11,7 +11,7 @@ function App() {
  
 
   return ( 
-    <div>
+    <div className="flex-1 items-center justify-center sm:items-stretch sm:justify-start">
       <Header />
       <Navigation />
       <WorkExperience/>
