@@ -10,18 +10,16 @@ import Education from './components/education/Education'
 function App() {
  
 
-  return (
-    <>    
-      <div>
-        <Header />
-        <Navigation />
-        <WorkExperience/>
-        <Projects/>
-        <Technologies/>
-        <Education/>
-        <ContactInfo />
-      </div>
-    </>
+  return ( 
+    <div>
+      <Header />
+      <Navigation />
+      <WorkExperience/>
+      <Projects/>
+      <Technologies/>
+      <Education/>
+      <ContactInfo />
+    </div>
   )
 }
 
