@@ -1,42 +1,16 @@
 /* ContactInfo.css */
 
 .contact-info {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: #1e293b; 
+  color: #fff;
   text-align: center;
   padding: 10px;
 }
 
 .contact-info h2 {
-  background-color: var(--background-color);
+  background-color: #f8f8f8;
 }
 
 .contact-info p {
   word-wrap: break-word; /* Allow long URLs to wrap */
-}
-
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  .contact-info {
-    --background-color: #f8f8f8; /* Light mode background color */
-    --text-color: #1e293b; /* Light mode text color */
-  }
-
-  .contact-info h2 {
-    --text-color: #1e293b; /* Light mode text color */
-    --background-color: #f8f8f8; /* Light mode background color */
-  }
-}
-
-/* Light mode styles */
-@media (prefers-color-scheme: light) {
-  .contact-info {
-    --background-color: #1e293b; /* Dark mode background color */
-    --text-color: #fff; /* Dark mode text color */
-  }
-
-  .contact-info h2 {
-    --text-color: #fff; /* Dark mode text color */
-    --background-color: #1e293b; /* Dark mode background color */
-  }
 }
