@@ -3,8 +3,7 @@
 .section {
   padding: 20px;
   position: relative;
-  color: #fff;
-  background-color: #f8f8f8;
+  word-wrap: break-word;
 }
 
 .section h2 {
@@ -13,7 +12,27 @@
   margin: 0; /* Remove default margin */
 }
 
+.section div {
+  color: #1e293b;
+  background-color: var(--background-color);
+}
+
 .section h2 a {
   position: absolute;
   right: 0;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .section div {
+    --text-color: 
+    --background-color: #333; /* Dark mode background color */
+  }
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .section div {
+    --background-color: #f8f8f8; /* Dark mode background color */
+  }
 }
