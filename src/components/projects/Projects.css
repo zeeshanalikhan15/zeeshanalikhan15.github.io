@@ -23,3 +23,9 @@
   .projects li {
     margin-bottom: 5px;
   }
+
+  /* ContactInfo.css */
+
+  .projects p {
+    word-wrap: break-word; /* Allow long URLs to wrap */
+  }

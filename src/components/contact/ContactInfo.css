@@ -9,3 +9,9 @@
     color: #fff;
     background-color: #333;
   }
+
+  /* ContactInfo.css */
+
+  .contact-info p {
+    word-wrap: break-word; /* Allow long URLs to wrap */
+  }
