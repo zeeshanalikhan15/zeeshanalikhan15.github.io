@@ -1,14 +1,33 @@
-section {
-    padding: 20px;
-    position: relative;
-  }
-  
-  section h2 {
-    color: #333;
-    background-color: lightblue;
-    margin: 0; /* Remove default margin */
-  }
+/* Section.css */
 
-  section h2 a {
-    position: absolute; right: 0;
+.section {
+  padding: 20px;
+  position: relative;
+}
+
+.section h2 {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0; /* Remove default margin */
+}
+
+.section h2 a {
+  position: absolute;
+  right: 0;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .section {
+    --text-color: #1e293b; /* Light mode text color */
+    --background-color: #f8f8f8; /* Light mode background color */
   }
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .section {
+    --text-color: #fff; /* Dark mode text color */
+    --background-color: #1e293b; /* Dark mode background color */
+  }
+}

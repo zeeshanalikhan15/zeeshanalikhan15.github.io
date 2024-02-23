@@ -3,7 +3,7 @@ import upIcon  from '../../assets/up-arrow.png'
 
 function Section({ id, title, content }) {
   return (
-    <section id={id}>
+    <section id={id} className="section">
       <h2>{title}
         <a href="#main-header">
           <img style={{ width: '40px', height: '40px' }} src={upIcon} alt="Scroll to top" />
