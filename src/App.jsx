@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css'
-import Header from './components/header/Header'
-import ContactInfo from './components/contact/ContactInfo'
-import WorkExperience from './components/work/WorkExperience'
-import Projects from './components/projects/Projects'
-import Technologies from './components/tech/Technologies'
-import Education from './components/education/Education'
+import './App.css';
+import Header from './components/header/Header';
+import ContactInfo from './components/contact/ContactInfo';
+import WorkExperience from './components/work/WorkExperience';
+import Projects from './components/projects/Projects';
+import Technologies from './components/tech/Technologies';
+import Education from './components/education/Education';
 
 const App = () => {
   return (
