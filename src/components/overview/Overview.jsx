@@ -85,7 +85,14 @@ const Overview = () => {
                         <div className="absolute left-4 top-0 w-1 bg-gray-300 h-full"></div>
                         <li className="mb-6 relative pl-8">
                             <div className="bg-white p-4 rounded-md shadow-md relative z-10">
-                                <h4 className="text-xl font-semibold">2018 – Present</h4>
+                                <h4 className="text-xl font-semibold">Nov 2024 – Present</h4>
+                                <p className="text-lg italic">Senior Software Engineer @ virtualQ - Full-time, Berlin, Germany</p>
+                            </div>
+                            <div className="absolute left-0 top-4 w-4 h-4 bg-white border-4 border-gray-300 rounded-full"></div>
+                        </li>
+                        <li className="mb-6 relative pl-8">
+                            <div className="bg-white p-4 rounded-md shadow-md relative z-10">
+                                <h4 className="text-xl font-semibold">Aug 2018 – Oct 2024</h4>
                                 <p className="text-lg italic">Call Center Developer @ virtualQ - Freelance, Remote</p>
                             </div>
                             <div className="absolute left-0 top-4 w-4 h-4 bg-white border-4 border-gray-300 rounded-full"></div>
