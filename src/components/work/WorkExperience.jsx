@@ -7,7 +7,31 @@ const WorkExperience = () => {
       <div className="space-y-10">
         <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
-          <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">2018 – Present</div>
+          <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">Nov 2024 – Present</div>
+          <div className="relative pl-16 mt-2">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">
+              Senior Software Engineer @ virtualQ
+              <span className="italic text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"> - Full-time, Berlin, Germany</span>
+            </h3>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">I work on web applications using Ruby on Rails and React JS.</p>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold mb-2">Key Responsibilities:</p>
+            <ul className="list-disc list-inside text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
+              <li>Managing backend and frontend development</li>
+              <li>Ensuring client features and requirements are met</li>
+              <li>Collaborating with cross-functional teams to deliver high-quality software solutions</li>
+              <li>Implementing best practices for software development and deployment</li>
+              <li>Conducting code reviews and providing mentorship to junior developers</li>
+            </ul>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold mb-2">Tools & Technologies:</p>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
+              Ruby on Rails, React.js, Node.js, C#, REST APIs, RESTful WebServices, Web Development, Web Services API
+            </p>
+          </div>
+        </div>
+
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
+          <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
+          <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">Aug 2018 – Oct 2024</div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">
               Call Center Developer @ virtualQ
