@@ -8,7 +8,7 @@ const Education = () => {
                 <div className="relative bg-white p-8 rounded-md shadow-md text-left">
                     <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
                     <div className="relative pl-16 mt-2">
-                        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">University Education</h3>
+                        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2"></h3>
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">BS in Computer Science</p>
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">National University of Computer and Emerging Science, FAST</p>
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Lahore, Pakistan, 2010 - 2014</p>
@@ -17,7 +17,7 @@ const Education = () => {
                 <div className="relative bg-white p-8 rounded-md shadow-md text-left">
                     <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
                     <div className="relative pl-16 mt-2">
-                        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">University Courses</h3>
+                        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Courses</h3>
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
                             Artificial Intelligence, Computer Programming, Data Structures, Design & Analysis of Algorithms, Human-Computer Interaction, Object-Oriented Analysis & Design, Software Engineering, Theory of Automata, Advanced Database Systems
                         </p>
@@ -26,7 +26,7 @@ const Education = () => {
                 <div className="relative bg-white p-8 rounded-md shadow-md text-left">
                     <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
                     <div className="relative pl-16 mt-2">
-                        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">University Projects</h3>
+                        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Projects</h3>
                         <ul className="list-disc pl-5 mb-4">
                             <li className="mb-4">
                                 <h4 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold">Automated Text Positioning for Urdu Newspaper Headline</h4>
