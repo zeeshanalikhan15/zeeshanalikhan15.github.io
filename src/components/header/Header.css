@@ -1,0 +1,27 @@
+#main-header {
+    background-color: #1f2937;
+    /* Tailwind CSS gray-800 */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#main-header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+#main-header nav ul li {
+    margin: 0 1rem;
+}
+
+#main-header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#main-header nav ul li a:hover {
+    text-decoration: underline;
+}
