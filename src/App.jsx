@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css'
 import Header from './components/header/Header'
 import ContactInfo from './components/contact/ContactInfo'
@@ -6,7 +7,7 @@ import Projects from './components/projects/Projects'
 import Technologies from './components/tech/Technologies'
 import Education from './components/education/Education'
 
-function App() {
+const App = () => {
   return (
     <div className="flex-1 items-center justify-center sm:items-stretch sm:justify-start">
       <Header />
@@ -16,7 +17,7 @@ function App() {
       <Education />
       <ContactInfo />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
