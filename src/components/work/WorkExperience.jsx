@@ -5,7 +5,7 @@ const WorkExperience = () => {
     <section id="work-experience" className="my-8 p-6 bg-gray-100 shadow-md rounded-lg">
       <h2 className="text-3xl font-bold mb-6 bg-gray-100 p-2 rounded-md">Work Experience</h2>
       <div className="space-y-10">
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">2018 – Present</div>
           <div className="relative pl-16 mt-2">
@@ -25,7 +25,7 @@ const WorkExperience = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">Apr 2021 – Oct 2021</div>
           <div className="relative pl-16 mt-2">
@@ -43,7 +43,7 @@ const WorkExperience = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">Nov 2017 – Mar 2021</div>
           <div className="relative pl-16 mt-2">
@@ -61,7 +61,7 @@ const WorkExperience = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">Sep 2016 – Nov 2017</div>
           <div className="relative pl-16 mt-2">
@@ -79,7 +79,7 @@ const WorkExperience = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">June 2014 – Aug 2016</div>
           <div className="relative pl-16 mt-2">

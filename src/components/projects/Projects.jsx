@@ -5,7 +5,7 @@ const Projects = () => {
     <section id="projects" className="my-8 p-6 bg-gray-300 shadow-md rounded-lg">
       <h2 className="text-3xl font-bold mb-6 bg-gray-300 p-2 rounded-md">Projects</h2>
       <div className="space-y-10">
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">virtualQ.Net</h3>
@@ -24,7 +24,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Avaya Elite Connector</h3>
@@ -40,7 +40,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Avaya AACC Connector</h3>
@@ -56,7 +56,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Avaya CIE Connector</h3>
@@ -72,7 +72,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">vQube Asterisk Connector</h3>
@@ -88,7 +88,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Voxtron QConnect</h3>
@@ -104,7 +104,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">PureConnect/Genesys/ININ Contact Center Integration with Afiniti</h3>
@@ -116,7 +116,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Avaya Elite Simulator</h3>
@@ -128,7 +128,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">PureConnect/Genesys/ININ Simulator</h3>
@@ -140,7 +140,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">X-Agent Application for ININ</h3>
@@ -152,7 +152,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Agent Application for Afiniti</h3>
@@ -164,7 +164,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-8 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">ConnectorAutoUpdater</h3>
