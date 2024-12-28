@@ -9,13 +9,15 @@ import Education from './components/education/Education';
 
 const App = () => {
   return (
-    <div className="flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+    <div className="flex flex-col items-center w-full">
       <Header />
-      <WorkExperience />
-      <Projects />
-      <Technologies />
-      <Education />
-      <ContactInfo />
+      <div className="w-full">
+        <WorkExperience />
+        <Projects />
+        <Technologies />
+        <Education />
+        <ContactInfo />
+      </div>
     </div>
   );
 };
