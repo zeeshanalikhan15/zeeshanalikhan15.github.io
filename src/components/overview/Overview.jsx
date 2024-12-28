@@ -5,12 +5,12 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const Overview = () => {
-    const data = {
-        labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Socket Programming', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS'],
+    const proficiencyData = {
+        labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Socket Programming', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
         datasets: [
             {
                 label: 'Proficiency',
-                data: [90, 70, 60, 85, 80, 75, 80, 85, 80, 90, 85, 70],
+                data: [9, 5, 6, 8.5, 8, 7.5, 8, 8.5, 8, 9, 8.5, 5, 7, 6.5],
                 backgroundColor: 'rgba(54, 162, 235, 0.6)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1,
@@ -18,7 +18,7 @@ const Overview = () => {
         ],
     };
 
-    const options = {
+    const proficiencyOptions = {
         responsive: true,
         plugins: {
             legend: {
@@ -26,7 +26,51 @@ const Overview = () => {
             },
             title: {
                 display: true,
-                text: 'Technologies and Languages Proficiency',
+                text: 'Technologies and Languages Proficiency (0-10)',
+            },
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 10,
+            },
+        },
+    };
+
+    const experienceData = {
+        labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Socket Programming', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
+        datasets: [
+            {
+                label: 'Years of Experience',
+                data: [5, 3, 2, 4, 4, 5, 5, 4, 4, 3, 3, 2, 2, 2],
+                backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1,
+            },
+        ],
+    };
+
+    const experienceOptions = {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Years of Experience',
+            },
+        },
+        scales: {
+            y: {
+                title: {
+                    display: true,
+                    text: 'Years',
+                },
+                ticks: {
+                    beginAtZero: true,
+                    max: 10,
+                },
             },
         },
     };
@@ -79,7 +123,8 @@ const Overview = () => {
                 <div className="relative bg-white p-8 rounded-md shadow-md text-left">
                     <h3 className="text-2xl font-bold mb-4">Technologies</h3>
                     <p className="text-base mb-4">Throughout my career, I have worked with a variety of technologies including Avaya Elite, Avaya CIE, Avaya Aura Contact Center (AACC), Voxtron, Twilio, Asterisk, TCP/IP Network Programming, SI code, ACD implementations, ININ, and various network switches.</p>
-                    <Bar data={data} options={options} />
+                    <Bar data={proficiencyData} options={proficiencyOptions} />
+                    <Bar data={experienceData} options={experienceOptions} />
                 </div>
             </div>
         </section>
