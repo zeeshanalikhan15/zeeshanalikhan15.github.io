@@ -9,8 +9,10 @@ const WorkExperience = () => {
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">2018 – Present</div>
           <div className="relative pl-16 mt-2">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Call Center Developer @ virtualQ</h3>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">Freelance, Remote</p>
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">
+              Call Center Developer @ virtualQ
+              <span className="italic text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"> - Freelance, Remote</span>
+            </h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">At virtualQ, I have been responsible for developing and managing integrations of the virtualQ system with various ACDs. My role involves managing client deployments, handling production issues, and maintaining code repositories. I have also developed REST web services and managed SIP communication.</p>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold mb-2">Key Responsibilities:</p>
             <ul className="list-disc list-inside text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
@@ -29,8 +31,10 @@ const WorkExperience = () => {
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">Apr 2021 – Oct 2021</div>
           <div className="relative pl-16 mt-2">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Principal Software Engineer @ Afiniti</h3>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">Full-time, Lahore, Pakistan</p>
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">
+              Principal Software Engineer @ Afiniti
+              <span className="italic text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"> - Full-time, Lahore, Pakistan</span>
+            </h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">As a Principal Software Engineer at Afiniti, I was responsible for training new hires, creating detailed documentation for SI code and ACD implementations, and providing ground knowledge of ACDs to new teams.</p>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold mb-2">Key Responsibilities:</p>
             <ul className="list-disc list-inside text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
@@ -47,8 +51,10 @@ const WorkExperience = () => {
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">Nov 2017 – Mar 2021</div>
           <div className="relative pl-16 mt-2">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Senior Software Engineer @ Afiniti</h3>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">Full-time, Lahore, Pakistan</p>
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">
+              Senior Software Engineer @ Afiniti
+              <span className="italic text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"> - Full-time, Lahore, Pakistan</span>
+            </h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">During my tenure as a Senior Software Engineer at Afiniti, I designed and developed integrations with Contact Center Platforms such as ININ and Avaya. I also worked on network communication protocols and collaborated with clients in production environments.</p>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold mb-2">Key Responsibilities:</p>
             <ul className="list-disc list-inside text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
@@ -65,8 +71,10 @@ const WorkExperience = () => {
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">Sep 2016 – Nov 2017</div>
           <div className="relative pl-16 mt-2">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Software Engineer @ Afiniti</h3>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">Full-time, Lahore, Pakistan</p>
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">
+              Software Engineer @ Afiniti
+              <span className="italic text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"> - Full-time, Lahore, Pakistan</span>
+            </h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">As a Software Engineer at Afiniti, I developed proxies and web services for network switches, created real-time, multi-threaded, and distributed applications, and monitored call and agent events from the switch.</p>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold mb-2">Key Responsibilities:</p>
             <ul className="list-disc list-inside text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
@@ -83,8 +91,10 @@ const WorkExperience = () => {
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="absolute left-0 top-0 -ml-8 mt-2 bg-gray-800 text-white rounded-full px-3 py-1 text-sm font-medium">June 2014 – Aug 2016</div>
           <div className="relative pl-16 mt-2">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Analyst Software Engineer @ Afiniti</h3>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">Full-time, Lahore, Pakistan</p>
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">
+              Analyst Software Engineer @ Afiniti
+              <span className="italic text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"> - Full-time, Lahore, Pakistan</span>
+            </h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">Starting my career as an Analyst Software Engineer at Afiniti, I focused on network programming, TCP/IP socket programming, and developing desktop and Windows services applications.</p>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold mb-2">Key Responsibilities:</p>
             <ul className="list-disc list-inside text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
