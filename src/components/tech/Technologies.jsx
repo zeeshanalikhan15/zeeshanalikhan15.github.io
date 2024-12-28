@@ -2,10 +2,10 @@ import React from 'react';
 
 const Technologies = () => {
   return (
-    <section id="technologies" className="my-8 p-4 bg-gray-200 shadow-md rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">Technologies</h2>
-      <div className="space-y-8">
-        <div className="relative bg-white p-6 rounded-md shadow-md">
+    <section id="technologies" className="my-8 p-6 bg-gray-200 shadow-md rounded-lg">
+      <h2 className="text-3xl font-bold mb-6 bg-gray-200 p-2 rounded-md">Technologies</h2>
+      <div className="space-y-10">
+        <div className="relative bg-white p-8 rounded-md shadow-md">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Languages</h3>
@@ -13,7 +13,7 @@ const Technologies = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-6 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Dot Net Framework</h3>
@@ -21,7 +21,7 @@ const Technologies = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-6 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Development Tools</h3>
@@ -29,7 +29,7 @@ const Technologies = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-6 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Contact Center Technologies</h3>
@@ -41,7 +41,7 @@ const Technologies = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-6 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Cloud and Communication Services</h3>
@@ -52,7 +52,7 @@ const Technologies = () => {
           </div>
         </div>
 
-        <div className="relative bg-white p-6 rounded-md shadow-md">
+        <div className="relative bg-white p-8 rounded-md shadow-md">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
           <div className="relative pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">Network Switches</h3>

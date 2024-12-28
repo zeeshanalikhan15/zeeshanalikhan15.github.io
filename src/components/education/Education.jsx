@@ -2,10 +2,10 @@ import React from 'react';
 
 const Education = () => {
     return (
-        <section id="education" className="my-8 p-4 bg-gray-400 shadow-md rounded-lg">
-            <h2 className="text-2xl font-bold mb-4">Education</h2>
-            <div className="space-y-8">
-                <div className="relative bg-white p-6 rounded-md shadow-md">
+        <section id="education" className="my-8 p-6 bg-gray-400 shadow-md rounded-lg">
+            <h2 className="text-3xl font-bold mb-6 bg-gray-400 p-2 rounded-md">Education</h2>
+            <div className="space-y-10">
+                <div className="relative bg-white p-8 rounded-md shadow-md">
                     <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
                     <div className="relative pl-16 mt-2">
                         <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">University Education</h3>
@@ -14,7 +14,7 @@ const Education = () => {
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Lahore, Pakistan, 2010 - 2014</p>
                     </div>
                 </div>
-                <div className="relative bg-white p-6 rounded-md shadow-md">
+                <div className="relative bg-white p-8 rounded-md shadow-md">
                     <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
                     <div className="relative pl-16 mt-2">
                         <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">University Courses</h3>
@@ -23,7 +23,7 @@ const Education = () => {
                         </p>
                     </div>
                 </div>
-                <div className="relative bg-white p-6 rounded-md shadow-md">
+                <div className="relative bg-white p-8 rounded-md shadow-md">
                     <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
                     <div className="relative pl-16 mt-2">
                         <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro">University Projects</h3>
