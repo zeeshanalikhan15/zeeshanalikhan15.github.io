@@ -3,10 +3,10 @@ import Section from '../section/Section'
 
 function ContactInfo() {
   return (
-    <section id="contact" className="my-8 p-4 bg-gray-500 shadow-md rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
-      <div className="space-y-8">
-        <div className="relative bg-white p-6 rounded-md shadow-md">
+    <section id="contact" className="my-8 p-6 bg-gray-500 shadow-md rounded-lg">
+      <h2 className="text-3xl font-bold mb-6 bg-gray-500 p-2 rounded-md">Get in Touch</h2>
+      <div className="space-y-10">
+        <div className="relative bg-white p-8 rounded-md shadow-md">
           <div className="section-content">
             <p className="section-description">Feel free to reach out to me through any of the following platforms:</p>
             <div className="contact-details">
