@@ -1,13 +1,13 @@
-import { Fragment } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Experience', href: '#work-experience', current: true },
-  { name: 'Projects', href: '#projects', current: false },
-  { name: 'Technologies', href: '#technologies', current: false },
-  { name: 'Education', href: '#education', current: false },
-  { name: 'Contact', href: '#contact', current: false },
+  { name: 'Experience', href: '#work-experience' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Technologies', href: '#technologies' },
+  { name: 'Education', href: '#education' },
+  { name: 'Contact', href: '#contact' },
 ]
 
 function classNames(...classes) {
@@ -15,6 +15,25 @@ function classNames(...classes) {
 }
 
 export default function Navigation() {
+  const [current, setCurrent] = useState('');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navigation.map((item) => document.querySelector(item.href));
+      const scrollPosition = window.scrollY + 200; // Adjust this value as needed
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        if (sections[i] && scrollPosition >= sections[i].offsetTop) {
+          setCurrent(navigation[i].name);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <Disclosure as="nav" className="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 z-50">
       {({ open }) => (
@@ -40,10 +59,10 @@ export default function Navigation() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.name === current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={item.name === current ? 'page' : undefined}
                       >
                         {item.name}
                       </a>
@@ -62,10 +81,10 @@ export default function Navigation() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.name === current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.name === current ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -75,6 +94,6 @@ export default function Navigation() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }
 
