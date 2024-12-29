@@ -12,8 +12,9 @@ const App = () => {
   return (
     <div className="flex flex-col items-center w-full">
       <Header />
-      <Overview />
+
       <div className="w-full">
+        <Overview />
         <WorkExperience />
         <Projects />
         <Technologies />

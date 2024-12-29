@@ -20,6 +20,7 @@ const Overview = () => {
 
     const proficiencyOptions = {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 position: 'top',
@@ -30,6 +31,12 @@ const Overview = () => {
             },
         },
         scales: {
+            x: {
+                ticks: {
+                    maxRotation: 90,
+                    minRotation: 45,
+                },
+            },
             y: {
                 beginAtZero: true,
                 max: 10,
@@ -52,6 +59,7 @@ const Overview = () => {
 
     const experienceOptions = {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 position: 'top',
@@ -62,6 +70,12 @@ const Overview = () => {
             },
         },
         scales: {
+            x: {
+                ticks: {
+                    maxRotation: 90,
+                    minRotation: 45,
+                },
+            },
             y: {
                 title: {
                     display: true,
@@ -130,8 +144,12 @@ const Overview = () => {
                 <div className="relative bg-white p-8 rounded-md shadow-md text-left">
                     <h3 className="text-2xl font-bold mb-4">Technologies</h3>
                     <p className="text-base mb-4">Throughout my career, I have worked with a variety of technologies including Avaya Elite, Avaya CIE, Avaya Aura Contact Center (AACC), Voxtron, Twilio, Asterisk, TCP/IP Network Programming, SI code, ACD implementations, ININ, and various network switches.</p>
-                    <Bar data={proficiencyData} options={proficiencyOptions} />
-                    <Bar data={experienceData} options={experienceOptions} />
+                    <div className="relative h-64 w-full">
+                        <Bar data={proficiencyData} options={proficiencyOptions} />
+                    </div>
+                    <div className="relative h-64 w-full mt-8">
+                        <Bar data={experienceData} options={experienceOptions} />
+                    </div>
                 </div>
             </div>
         </section>
