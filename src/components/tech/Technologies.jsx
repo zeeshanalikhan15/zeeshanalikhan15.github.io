@@ -7,7 +7,7 @@ const Technologies = () => {
       <div className="space-y-10">
         <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
-          <div className="relative pl-16 mt-2">
+          <div className="relative pl-2 sm:pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Languages</h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">C#, Ruby, C++ (some experience)</p>
           </div>
@@ -15,7 +15,7 @@ const Technologies = () => {
 
         <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
-          <div className="relative pl-16 mt-2">
+          <div className="relative pl-2 sm:pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Dot Net Framework</h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">WPF, WCF web services REST/SOAP, TCP/IP, Socket Programming, Multi-Threading, VOIP, SIP, Ruby on Rails</p>
           </div>
@@ -23,7 +23,7 @@ const Technologies = () => {
 
         <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
-          <div className="relative pl-16 mt-2">
+          <div className="relative pl-2 sm:pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Development Tools</h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">Visual Studio, TFS, Jira, Trello, Git, Bitbucket</p>
           </div>
@@ -31,7 +31,7 @@ const Technologies = () => {
 
         <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
-          <div className="relative pl-16 mt-2">
+          <div className="relative pl-2 sm:pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Contact Center Technologies</h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
               Avaya Elite (AES, CM, Tsapi/ASAI/DMCC, CIE - customer interaction express, AACC - Avaya Aura Contact center), Avaya CIE
@@ -43,7 +43,7 @@ const Technologies = () => {
 
         <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
-          <div className="relative pl-16 mt-2">
+          <div className="relative pl-2 sm:pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Cloud and Communication Services</h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
               Twilio (Functions, TwiML, API, Programmable Voice, SMS, Elastic Switching, SIP Domains, BYOC - Bring Your Own Carrier)
@@ -54,7 +54,7 @@ const Technologies = () => {
 
         <div className="relative bg-white p-8 rounded-md shadow-md text-left">
           <div className="absolute left-0 top-0 h-full w-1 bg-gray-300"></div>
-          <div className="relative pl-16 mt-2">
+          <div className="relative pl-2 sm:pl-16 mt-2">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-retro mb-2">Network Switches</h3>
             <h4 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-2">PureConnect / Genesys / ININ Interactive Intelligence Contact Center</h4>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4">
