@@ -25,7 +25,7 @@ jobs:
       - name: Add pnpm to PATH
         shell: bash
         run: |
-          echo "Adding pnpm to PATH"
+          export PATH="$(npm bin -g):$PATH"
           echo "::add-path::$(npm bin -g)"
 
       - name: Install dependencies
