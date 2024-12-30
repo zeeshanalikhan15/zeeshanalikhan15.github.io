@@ -87,15 +87,15 @@ export const workExperienceData = [
 export const technologiesData = [
     {
         category: 'Languages',
-        items: ['C#', 'Ruby', 'C++ (some experience)']
+        items: ['C#', 'Ruby', 'C++', 'JavaScript', 'SQL', 'HTML', 'CSS']
     },
     {
-        category: 'Dot Net Framework',
-        items: ['WPF', 'WCF web services REST/SOAP', 'TCP/IP', 'Socket Programming', 'Multi-Threading', 'VOIP', 'SIP', 'Ruby on Rails']
+        category: 'Frameworks',
+        items: ['Dot Net framework', 'Dot Net core', 'WPF', 'WinForms', 'WCF web services REST/SOAP', 'React.js', 'Node.js', 'Tailwind', 'Boost', 'Ruby on Rails (RoR)', 'Network Programming', 'TCP/IP', 'Socket Programming', 'Multi-Threading', 'VOIP', 'SIP']
     },
     {
         category: 'Development Tools',
-        items: ['Visual Studio', 'TFS', 'Jira', 'Trello', 'Git', 'Bitbucket']
+        items: ['Visual Studio', 'TFS', 'Jira', 'Trello', 'Git', 'Bitbucket', 'Github', 'Postman', 'Rollbar', 'Wireshark', 'VS Code', 'GitHub Copilot', 'OpenAI ChatGPT', 'Meta.ai', 'Confluence', 'Slack', 'Microsoft Teams']
     },
     {
         category: 'Contact Center Technologies',
