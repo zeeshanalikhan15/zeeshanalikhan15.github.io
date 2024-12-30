@@ -20,10 +20,13 @@ jobs:
           cache: 'pnpm'
 
       - name: Install pnpm
-        run: npm install -g pnpm@latest  # Update to the latest pnpm version
+        run: npm install -g pnpm@latest
 
       - name: Add pnpm to PATH
-        run: echo "::add-path::$(npm bin -g)"
+        shell: bash
+        run: |
+          echo "Adding pnpm to PATH"
+          echo "::add-path::$(npm bin -g)"
 
       - name: Install dependencies
         run: pnpm install
