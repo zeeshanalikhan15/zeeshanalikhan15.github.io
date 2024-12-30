@@ -1,6 +1,6 @@
 import './ContactInfo.css'
-import Section from '../section/Section'
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { contactInfoData } from '../../data/data';
 
 function ContactInfo() {
   return (
@@ -13,15 +13,15 @@ function ContactInfo() {
             <div className="contact-details flex flex-col items-start">
               <div className="contact-item mb-6 flex items-center">
                 <FaEnvelope className="text-xl sm:text-2xl text-gray-800 mr-2" />
-                <p><a href="mailto:ZeeshanAliKhan15@gmail.com" className="contact-link text-sm sm:text-lg text-blue-600 hover:underline ml-2">ZeeshanAliKhan15@gmail.com</a></p>
+                <p><a href={`mailto:${contactInfoData.email}`} className="contact-link text-sm sm:text-lg text-blue-600 hover:underline ml-2">{contactInfoData.email}</a></p>
               </div>
               <div className="contact-item mb-6 flex items-center">
                 <FaLinkedin className="text-xl sm:text-2xl text-gray-800 mr-2" />
-                <p><a href="https://www.linkedin.com/in/zeeshanalikhan15/" className="contact-link text-sm sm:text-lg text-blue-600 hover:underline ml-2">linkedin.com/in/zeeshanalikhan15</a></p>
+                <p><a href={contactInfoData.linkedin} className="contact-link text-sm sm:text-lg text-blue-600 hover:underline ml-2">{contactInfoData.linkedin}</a></p>
               </div>
               <div className="contact-item mb-6 flex items-center">
                 <FaGithub className="text-xl sm:text-2xl text-gray-800 mr-2" />
-                <p><a href="https://github.com/zeeshanalikhan15" className="contact-link text-sm sm:text-lg text-blue-600 hover:underline ml-2">github.com/zeeshanalikhan15</a></p>
+                <p><a href={contactInfoData.github} className="contact-link text-sm sm:text-lg text-blue-600 hover:underline ml-2">{contactInfoData.github}</a></p>
               </div>
             </div>
           </div>
