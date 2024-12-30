@@ -15,9 +15,6 @@ jobs:
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
-        with:
-          node-version: 'lts/*'  # Use the latest LTS version of Node.js
-          cache: 'pnpm'
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v2
