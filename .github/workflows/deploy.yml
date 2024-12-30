@@ -19,14 +19,10 @@ jobs:
           node-version: 'lts/*'  # Use the latest LTS version of Node.js
           cache: 'pnpm'
 
-      - name: Install pnpm
-        run: npm install -g pnpm@latest
-
-      - name: Add pnpm to PATH
-        shell: bash
-        run: |
-          export PATH="$(npm bin -g):$PATH"
-          echo "::add-path::$(npm bin -g)"
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 'latest'
 
       - name: Install dependencies
         run: pnpm install
