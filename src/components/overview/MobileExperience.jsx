@@ -6,7 +6,7 @@ import './MobileExperience.css'; // Add CSS for animation
 const MobileExperience = () => {
     useEffect(() => {
         const handleScroll = () => {
-            const elements = document.querySelectorAll('.animate-slide-in');
+            const elements = document.querySelectorAll('.animate-grow-in');
             elements.forEach(element => {
                 const rect = element.getBoundingClientRect();
                 if (rect.top < window.innerHeight && rect.bottom > 0) {
@@ -28,10 +28,10 @@ const MobileExperience = () => {
     return (
         <div className="relative bg-white p-8 rounded-md shadow-md text-left">
             <h3 className="text-2xl font-bold mb-4">Work Experience</h3>
-            <ul className="list-none p-0 relative">
-                <div className="absolute left-4 top-0 w-1 bg-gray-300 h-full"></div>
+            <ul className="list-none p-0 relative ml-1.5">
+                <div className="absolute -left-2 top-0 w-1 bg-gray-300 h-full"></div>
                 {workExperienceData.map((experience, index) => (
-                    <div key={index} className="animate-slide-in">
+                    <div key={index} className="animate-grow-in -ml-8">
                         <OverviewExperienceItem
                             date={experience.date}
                             title={experience.title}
