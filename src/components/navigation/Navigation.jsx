@@ -35,12 +35,13 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleClick = (e, href) => {
+  const handleClick = (e, href, name) => {
     e.preventDefault();
     const offset = 80; // Adjust this value as needed
     const element = document.querySelector(href);
     const top = element.getBoundingClientRect().top + window.pageYOffset - offset;
     window.scrollTo({ top, behavior: 'smooth' });
+    setCurrent(name);
   };
 
   return (
@@ -67,7 +68,7 @@ export default function Navigation() {
                       <a
                         key={item.name}
                         href={item.href}
-                        onClick={(e) => handleClick(e, item.href)}
+                        onClick={(e) => handleClick(e, item.href, item.name)}
                         className={classNames(
                           item.name === current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
@@ -90,7 +91,7 @@ export default function Navigation() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  onClick={(e) => handleClick(e, item.href)}
+                  onClick={(e) => handleClick(e, item.href, item.name)}
                   className={classNames(
                     item.name === current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
