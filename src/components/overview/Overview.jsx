@@ -1,8 +1,11 @@
 import React from 'react';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { workExperienceData } from '../../data/data';
 import OverviewExperienceItem from './OverviewExperienceItem';
 import MobileGraphs from './MobileGraphs';
 import DesktopGraphs from './DesktopGraphs';
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const Overview = () => {
     return (
