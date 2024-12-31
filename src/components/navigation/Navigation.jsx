@@ -21,7 +21,7 @@ export default function Navigation() {
   useEffect(() => {
     const handleScroll = () => {
       const sections = navigation.map((item) => document.querySelector(item.href));
-      const scrollPosition = window.scrollY + 200; // Adjust this value as needed
+      const scrollPosition = window.scrollY + window.innerHeight; // Adjust this value as needed
 
       for (let i = sections.length - 1; i >= 0; i--) {
         if (sections[i] && scrollPosition >= sections[i].offsetTop) {
