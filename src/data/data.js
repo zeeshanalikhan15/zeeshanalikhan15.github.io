@@ -245,9 +245,13 @@ export const educationData = [
 ];
 
 export const contactInfoData = {
+    heading: 'Get in Touch',
+    description: 'Feel free to reach out to me through any of the following platforms',
     email: 'ZeeshanAliKhan15@gmail.com',
     linkedin: 'https://www.linkedin.com/in/zeeshanalikhan15/',
-    github: 'https://github.com/zeeshanalikhan15'
+    linkedinText: 'LinkedIn/ZeeshanAliKhan15',
+    github: 'https://github.com/zeeshanalikhan15',
+    githubText: 'GitHub/ZeeshanAliKhan15'
 };
 
 export const proficiencyData = {
