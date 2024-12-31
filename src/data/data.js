@@ -1,4 +1,9 @@
-// data.js
+export const headerData = {
+    name: "Zeeshan Ali Khan",
+    title: "Problem Solver | Senior Software Engineer | VoIP & Contact Center Specialist",
+    description: "Aligning Advanced Communication Systems with Business Needs"
+};
+
 export const workExperienceData = [
     {
         date: 'Nov 2024 – Present',
