@@ -251,7 +251,7 @@ export const contactInfoData = {
 };
 
 export const proficiencyData = {
-    labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Socket Programming', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
+    labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Sockets', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
     datasets: [
         {
             label: 'Proficiency',
@@ -290,11 +290,11 @@ export const proficiencyOptions = {
 };
 
 export const experienceData = {
-    labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Socket Programming', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
+    labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Sockets', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
     datasets: [
         {
             label: 'Years of Experience',
-            data: [5, 3, 2, 4, 4, 5, 5, 4, 4, 3, 3, 2, 2, 2],
+            data: [9, 2, 6, 4, 6, 8, 5, 7, 9, 3, 4, 3, 2, 1.5],
             backgroundColor: 'rgba(75, 192, 192, 0.6)',
             borderColor: 'rgba(75, 192, 192, 1)',
             borderWidth: 1,
