@@ -1,10 +1,8 @@
 import React from 'react';
-import { Bar } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
-import { workExperienceData, proficiencyData, proficiencyOptions, experienceData, experienceOptions } from '../../data/data';
+import { workExperienceData } from '../../data/data';
 import OverviewExperienceItem from './OverviewExperienceItem';
-
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+import MobileGraphs from './MobileGraphs';
+import DesktopGraphs from './DesktopGraphs';
 
 const Overview = () => {
     return (
@@ -29,11 +27,11 @@ const Overview = () => {
                 <div className="relative bg-white p-8 rounded-md shadow-md text-left">
                     <h3 className="text-2xl font-bold mb-4">Technologies</h3>
                     <p className="text-base mb-4">Throughout my career, I have worked with a variety of technologies including Avaya Elite, Avaya CIE, Avaya Aura Contact Center (AACC), Voxtron, Twilio, Asterisk, TCP/IP Network Programming, SI code, ACD implementations, ININ, and various network switches.</p>
-                    <div className="relative h-64 w-full">
-                        <Bar data={proficiencyData} options={proficiencyOptions} />
+                    <div className="block lg:hidden">
+                        <MobileGraphs />
                     </div>
-                    <div className="relative h-64 w-full mt-8">
-                        <Bar data={experienceData} options={experienceOptions} />
+                    <div className="hidden lg:block">
+                        <DesktopGraphs />
                     </div>
                 </div>
             </div>

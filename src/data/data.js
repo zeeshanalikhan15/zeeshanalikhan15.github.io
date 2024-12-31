@@ -334,6 +334,99 @@ export const experienceOptions = {
     },
 };
 
+export const mobileProficiencyData = {
+    labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Socket Programming', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
+    datasets: [
+        {
+            label: 'Proficiency',
+            data: [9, 5, 6, 8.5, 8, 7.5, 8, 8.5, 8, 9, 8.5, 5, 7, 6.5],
+            backgroundColor: 'rgba(54, 162, 235, 0.6)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1,
+        },
+    ],
+};
+
+export const mobileExperienceData = {
+    labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Socket Programming', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
+    datasets: [
+        {
+            label: 'Years of Experience',
+            data: [5, 3, 2, 4, 4, 5, 5, 4, 4, 3, 3, 2, 2, 2],
+            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1,
+        },
+    ],
+};
+
+export const mobileGraphOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    indexAxis: 'y',
+    plugins: {
+        legend: {
+            position: 'top',
+        },
+        title: {
+            display: true,
+            text: 'Technologies and Languages Proficiency (0-10)',
+        },
+    },
+    scales: {
+        x: {
+            beginAtZero: true,
+            max: 10,
+        },
+    },
+};
+
+export const desktopProficiencyData = {
+    labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Socket Programming', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
+    datasets: [
+        {
+            label: 'Proficiency',
+            data: [9, 5, 6, 8.5, 8, 7.5, 8, 8.5, 8, 9, 8.5, 5, 7, 6.5],
+            backgroundColor: 'rgba(54, 162, 235, 0.6)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1,
+        },
+    ],
+};
+
+export const desktopExperienceData = {
+    labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Socket Programming', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
+    datasets: [
+        {
+            label: 'Years of Experience',
+            data: [5, 3, 2, 4, 4, 5, 5, 4, 4, 3, 3, 2, 2, 2],
+            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1,
+        },
+    ],
+};
+
+export const desktopGraphOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+        legend: {
+            position: 'top',
+        },
+        title: {
+            display: true,
+            text: 'Technologies and Languages Proficiency (0-10)',
+        },
+    },
+    scales: {
+        y: {
+            beginAtZero: true,
+            max: 10,
+        },
+    },
+};
+
 export const navigationLinks = [
     { name: 'Overview', href: '#overview' },
     { name: 'Experience', href: '#work-experience' },
