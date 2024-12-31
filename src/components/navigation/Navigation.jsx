@@ -1,19 +1,9 @@
-import { Fragment, useState, useEffect, useRef } from 'react';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-
-const navigation = [
-  { name: 'Overview', href: '#overview' },
-  { name: 'Experience', href: '#work-experience' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Technologies', href: '#technologies' },
-  { name: 'Education', href: '#education' },
-  { name: 'Contact', href: '#contact' },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
+import { useState, useEffect, useRef } from 'react';
+import { Disclosure } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import NavigationLinks from './NavigationLinks';
+import { navigationLinks } from '../../data/data';
+import DesktopNavigation from './DesktopNavigation';
 
 export default function Navigation() {
   const [current, setCurrent] = useState('');
@@ -22,12 +12,12 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navigation.map((item) => document.querySelector(item.href));
+      const sections = navigationLinks.map((item) => document.querySelector(item.href));
       const scrollPosition = window.scrollY + window.innerHeight; // Adjust this value as needed
 
       for (let i = sections.length - 1; i >= 0; i--) {
         if (sections[i] && scrollPosition >= sections[i].offsetTop) {
-          setCurrent(navigation[i].name);
+          setCurrent(navigationLinks[i].name);
           break;
         }
       }
@@ -81,22 +71,7 @@ export default function Navigation() {
               </div>
               <div className="flex flex-1 items-center justify-center">
                 <div className="hidden sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        onClick={(e) => handleClick(e, item.href, item.name)}
-                        className={classNames(
-                          item.name === current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.name === current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
+                  <DesktopNavigation navigation={navigationLinks} current={current} handleClick={handleClick} />
                 </div>
               </div>
             </div>
@@ -104,21 +79,7 @@ export default function Navigation() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  onClick={(e) => handleClick(e, item.href, item.name)}
-                  className={classNames(
-                    item.name === current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.name === current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+              <NavigationLinks navigation={navigationLinks} current={current} handleClick={handleClick} />
             </div>
           </Disclosure.Panel>
         </>

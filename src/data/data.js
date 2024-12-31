@@ -333,3 +333,12 @@ export const experienceOptions = {
         },
     },
 };
+
+export const navigationLinks = [
+    { name: 'Overview', href: '#overview' },
+    { name: 'Experience', href: '#work-experience' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Technologies', href: '#technologies' },
+    { name: 'Education', href: '#education' },
+    { name: 'Contact', href: '#contact' },
+];
