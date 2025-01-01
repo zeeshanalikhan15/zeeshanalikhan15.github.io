@@ -12,10 +12,8 @@ const DesktopNavigation = ({ navigation, current, handleClick }) => {
                     key={item.name}
                     href={item.href}
                     onClick={(e) => handleClick(e, item.href, item.name)}
-                    className={classNames(
-                        item.name === current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'rounded-md px-3 py-2 text-sm font-medium'
-                    )}
+                    className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-mono text-green-300 hover:text-green-500 ${current === item.name ? 'text-green-500' : ''
+                        }`}
                     aria-current={item.name === current ? 'page' : undefined}
                 >
                     {item.name}

@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import NavigationLinks from './NavigationLinks';
 import { navigationLinks } from '../../data/data';
 import MobileNavigation from './MobileNavigation';
 import DesktopNavigation from './DesktopNavigation';
@@ -39,15 +38,45 @@ export default function Navigation() {
     setCurrent(name);
   };
 
+  const handleNavigationClick = (event, href) => {
+    event.preventDefault();
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      const veil = document.createElement('div');
+      veil.style.position = 'fixed';
+      veil.style.top = 0;
+      veil.style.left = 0;
+      veil.style.width = '100%';
+      veil.style.height = '100%';
+      veil.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      veil.style.zIndex = 9999;
+      veil.style.transition = 'opacity 0.5s ease-in-out';
+      veil.style.opacity = 0;
+      document.body.appendChild(veil);
+
+      setTimeout(() => {
+        veil.style.opacity = 1;
+      }, 10);
+
+      setTimeout(() => {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+        veil.style.opacity = 0;
+        setTimeout(() => {
+          document.body.removeChild(veil);
+        }, 500);
+      }, 500);
+    }
+  };
+
   return (
-    <Disclosure as="nav" className="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 z-50" ref={navRef}>
+    <Disclosure as="nav" className="fixed top-0 left-0 w-full bg-black text-green-500 p-4 z-50" ref={navRef}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-center">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-green-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />

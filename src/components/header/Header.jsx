@@ -1,13 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { headerData } from '../../data/data';
+import './Header.css';
 
 const Header = () => {
+  const [displayedText, setDisplayedText] = useState({ name: '', title: '', description: '' });
+  const [currentTyping, setCurrentTyping] = useState(''); // Tracks which line is being typed
+  const [showCursor, setShowCursor] = useState(true); // To show cursor before typing starts
+
+  useEffect(() => {
+    const typeText = async (text, key, delay) => {
+      setCurrentTyping(key); // Set the current line being typed
+      for (let i = 0; i <= text.length; i++) {
+        await new Promise((resolve) => setTimeout(resolve, delay));
+        setDisplayedText((prev) => ({
+          ...prev,
+          [key]: text.slice(0, i),
+        }));
+      }
+      setCurrentTyping(''); // Clear after typing is done
+    };
+
+    const animateTyping = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 1000)); // Wait for 1 seconds
+      setShowCursor(false); // Hide cursor before typing starts
+      await typeText(headerData.name, 'name', 100);
+      await typeText(headerData.title, 'title', 100);
+      await typeText(headerData.description, 'description', 100);
+    };
+
+    animateTyping();
+
+    return () => {
+      setDisplayedText({ name: '', title: '', description: '' });
+      setCurrentTyping('');
+    };
+  }, []);
+
   return (
-    <header className="bg-gray-800 text-white p-4 w-full">
-      <div className="flex flex-col items-center mb-6 w-full">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 font-retro">{headerData.name}</h1>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-3 font-retro">{headerData.title}</p>
-        <p className="break-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 font-retro text-center">{headerData.description}</p>
+    <header className="main-header">
+      <div className="text-container">
+        <h1 className="name matrix-font">
+          {displayedText.name}
+          {(currentTyping === 'name' || showCursor) && <span className="blinking-cursor">_</span>}
+        </h1>
+        <h3 className="title matrix-font">
+          {displayedText.title}
+          {currentTyping === 'title' && <span className="blinking-cursor">_</span>}
+        </h3>
+        <h5 className="description matrix-font">
+          {displayedText.description}
+          {currentTyping === 'description' && <span className="blinking-cursor">_</span>}
+        </h5>
       </div>
     </header>
   );

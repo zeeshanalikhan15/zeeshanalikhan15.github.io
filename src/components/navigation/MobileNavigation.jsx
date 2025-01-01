@@ -52,14 +52,20 @@ const MobileNavigation = ({ navigation, current, handleClick }) => {
             {isOpen && (
                 <div className="sm:hidden">
                     <div className="space-y-1 px-2 pb-3 pt-2">
-                        <NavigationLinks
-                            navigation={navigation}
-                            current={current}
-                            handleClick={(e, href, name) => {
-                                handleClick(e, href, name);
-                                closeMenu(); // Close menu after navigation
-                            }}
-                        />
+                        {navigation.map((item) => (
+                            <a
+                                key={item.name}
+                                href={item.href}
+                                onClick={(e) => {
+                                    handleClick(e, item.href, item.name);
+                                    closeMenu(); // Close menu after navigation
+                                }}
+                                className={`block px-3 py-2 rounded-md text-base font-mono text-green-300 hover:text-green-500 ${current === item.name ? 'text-green-500' : ''
+                                    }`}
+                            >
+                                {item.name}
+                            </a>
+                        ))}
                     </div>
                 </div>
             )}
