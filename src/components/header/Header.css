@@ -25,3 +25,29 @@
 #main-header nav ul li a:hover {
     text-decoration: underline;
 }
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-grow {
+    animation: grow 1s ease-out forwards;
+    opacity: 0;
+    /* Ensure text is hidden before animation starts */
+}
+
+.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.delay-2 {
+    animation-delay: 1s;
+}
