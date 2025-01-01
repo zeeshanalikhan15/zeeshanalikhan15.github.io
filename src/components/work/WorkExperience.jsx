@@ -4,8 +4,8 @@ import { workExperienceData } from '../../data/data';
 
 const WorkExperience = () => {
   return (
-    <section id="work-experience" className="my-8 p-6 bg-black shadow-md rounded-lg">
-      <h2 className="text-3xl font-bold mb-6 bg-black p-2 rounded-md text-green-500">Work Experience</h2>
+    <section id="work-experience" className="my-8 p-6 bg-matrix-bg shadow-md rounded-lg">
+      <h2 className="text-3xl font-bold mb-6 text-matrix-green matrix-font">Work Experience</h2>
       <div className="space-y-10">
         {workExperienceData.map((experience, index) => (
           <WorkExperienceItem

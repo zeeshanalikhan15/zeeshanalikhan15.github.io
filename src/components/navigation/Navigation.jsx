@@ -69,14 +69,14 @@ export default function Navigation() {
   };
 
   return (
-    <Disclosure as="nav" className="fixed top-0 left-0 w-full bg-black text-green-500 p-4 z-50" ref={navRef}>
+    <Disclosure as="nav" className="fixed top-0 left-0 w-full bg-matrix-bg text-matrix-green matrix-font p-4 z-50" ref={navRef}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-center">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-green-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-matrix-green matrix-font hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
