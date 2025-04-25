@@ -1,8 +1,8 @@
 import React from 'react';
 import { technologiesData } from '../../data/data';
-import { FaCode, FaCogs, FaCloud, FaTools, FaDatabase, FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava } from 'react-icons/fa';
-import { SiRuby, SiCplusplus } from 'react-icons/si'; // Removed SiMicrosoftsqlserver
-import { TbBrandCSharp } from 'react-icons/tb'; // Added TbBrandCSharp
+import { FaCode, FaCogs, FaCloud, FaTools, FaDatabase, FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava, FaReact, FaNodeJs, FaPhoneAlt, FaNetworkWired, FaWindowMaximize } from 'react-icons/fa';
+import { SiRuby, SiCplusplus, SiDotnet, SiTailwindcss, SiBoost, SiRubyonrails } from 'react-icons/si';
+import { TbBrandCSharp } from 'react-icons/tb';
 
 const categoryIcons = {
   Languages: <FaCode className="text-blue-600 text-3xl mr-4" />,
@@ -13,7 +13,7 @@ const categoryIcons = {
 };
 
 const languageIcons = {
-  'C#': <TbBrandCSharp className="text-blue-600 mr-2 text-xl" />, // Updated to TbBrandCSharp
+  'C#': <TbBrandCSharp className="text-blue-600 mr-2 text-xl" />,
   Ruby: <SiRuby className="text-red-600 mr-2 text-xl" />,
   'C++': <SiCplusplus className="text-blue-500 mr-2 text-xl" />,
   JavaScript: <FaJs className="text-yellow-500 mr-2 text-xl" />,
@@ -21,7 +21,26 @@ const languageIcons = {
   CSS: <FaCss3Alt className="text-blue-500 mr-2 text-xl" />,
   Python: <FaPython className="text-green-500 mr-2 text-xl" />,
   Java: <FaJava className="text-red-500 mr-2 text-xl" />,
-  SQL: <FaDatabase className="text-blue-500 mr-2 text-xl" />, // Replaced with FaDatabase
+  SQL: <FaDatabase className="text-blue-500 mr-2 text-xl" />,
+};
+
+const frameworkIcons = {
+  'Dot Net framework': <SiDotnet className="text-purple-600 mr-2 text-xl" />,
+  'Dot Net core': <SiDotnet className="text-purple-600 mr-2 text-xl" />,
+  WPF: <FaWindowMaximize className="text-blue-500 mr-2 text-xl" />,
+  WinForms: <FaCode className="text-blue-500 mr-2 text-xl" />,
+  'WCF web services REST/SOAP': <FaNetworkWired className="text-blue-500 mr-2 text-xl" />,
+  'React.js': <FaReact className="text-blue-500 mr-2 text-xl" />,
+  'Node.js': <FaNodeJs className="text-green-500 mr-2 text-xl" />,
+  Tailwind: <SiTailwindcss className="text-teal-500 mr-2 text-xl" />,
+  Boost: <SiBoost className="text-blue-500 mr-2 text-xl" />,
+  'Ruby on Rails (RoR)': <SiRubyonrails className="text-red-500 mr-2 text-xl" />,
+  'Network Programming': <FaCode className="text-blue-500 mr-2 text-xl" />,
+  'TCP/IP': <FaCode className="text-blue-500 mr-2 text-xl" />,
+  'Socket Programming': <FaCode className="text-blue-500 mr-2 text-xl" />,
+  'Multi-Threading': <FaCode className="text-blue-500 mr-2 text-xl" />,
+  VOIP: <FaPhoneAlt className="text-blue-500 mr-2 text-xl" />,
+  SIP: <FaCode className="text-blue-500 mr-2 text-xl" />,
 };
 
 const Technologies = () => {
@@ -38,7 +57,7 @@ const Technologies = () => {
             <ul className="list-disc list-inside text-gray-600 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {tech.items.map((item, itemIndex) => (
                 <li key={itemIndex} className="flex items-center">
-                  {languageIcons[item] || <FaCode className="text-blue-500 mr-2 text-xl" />}
+                  {languageIcons[item] || frameworkIcons[item] || <FaCode className="text-blue-500 mr-2 text-xl" />}
                   {item}
                 </li>
               ))}
