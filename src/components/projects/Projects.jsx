@@ -24,9 +24,12 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projectData.map((project, index) => (
           <div key={index} className="bg-gray-50 p-5 rounded-md shadow-sm text-left">
-            <div className="flex items-center mb-3">
-              {projectIcons[project.title] || <FaCode className="text-gray-500 mr-2 text-lg" />}
-              <h4 className="text-md font-medium text-gray-800">{project.title}</h4>
+            <div className="relative">
+              <span id={project.anchorId} className="absolute -top-28"></span> {/* Increased offset */}
+              <div className="flex items-center mb-3">
+                {projectIcons[project.title] || <FaCode className="text-gray-500 mr-2 text-lg" />}
+                <h4 className="text-md font-medium text-gray-800">{project.title}</h4>
+              </div>
             </div>
             <p className="text-sm text-gray-600 mb-2">{project.description}</p>
             <h5 className="text-sm font-semibold text-gray-700 mt-2">Technologies:</h5>

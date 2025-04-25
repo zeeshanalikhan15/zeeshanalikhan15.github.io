@@ -1,6 +1,6 @@
 import React from 'react';
 import WorkExperienceItem from './WorkExperienceItem';
-import { workExperienceData } from '../../data/data';
+import { workExperienceData, projectData } from '../../data/data'; // Import project data
 import { FaUserGraduate, FaUserTie, FaUserCog, FaUserAstronaut } from 'react-icons/fa';
 
 const WorkExperience = () => {
@@ -19,6 +19,11 @@ const WorkExperience = () => {
           const colorClass = avatarColors[index % avatarColors.length];
           const isLeftAligned = index % 2 === 0;
 
+          // Filter projects related to the current job experience based on company and role
+          const relatedProjects = projectData.filter(
+            project => project.company === experience.company && project.role === experience.title
+          );
+
           return (
             <WorkExperienceItem
               key={index}
@@ -31,6 +36,7 @@ const WorkExperience = () => {
               description={experience.description}
               responsibilities={experience.responsibilities}
               tools={experience.tools}
+              projects={relatedProjects} // Pass related projects
             />
           );
         })}

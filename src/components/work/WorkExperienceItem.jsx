@@ -10,6 +10,7 @@ const WorkExperienceItem = ({
     description,
     responsibilities,
     tools,
+    projects, // Add projects prop
 }) => {
     return (
         <div className={`flex ${isLeftAligned ? 'md:justify-start' : 'md:justify-end'} md:space-x-6`}>
@@ -32,7 +33,24 @@ const WorkExperienceItem = ({
                         ))}
                     </ul>
                     <p className="text-sm font-semibold text-gray-700">Tools:</p>
-                    <p className="text-sm text-gray-600">{tools}</p>
+                    <p className="text-sm text-gray-600 mb-4">{tools}</p>
+                    {projects.length > 0 && (
+                        <>
+                            <p className="text-sm font-semibold text-gray-700">Projects:</p>
+                            <ul className="list-disc list-inside text-sm text-gray-600">
+                                {projects.map((project, index) => (
+                                    <li key={index}>
+                                        <a
+                                            href={`#${project.anchorId}`}
+                                            className="text-blue-600 hover:underline"
+                                        >
+                                            {project.title}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </>
+                    )}
                 </div>
             </div>
         </div>
