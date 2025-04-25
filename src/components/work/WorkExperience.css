@@ -45,3 +45,9 @@
 .work-experience img:hover {
   transform: scale(1.1);
 }
+
+@media (min-width: 768px) {
+  .work-experience .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+}
