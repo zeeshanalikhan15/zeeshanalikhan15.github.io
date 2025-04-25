@@ -285,25 +285,7 @@ export const experienceData = {
     ],
 };
 
-export const graphOptions = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-        legend: {
-            position: 'top',
-        },
-        title: {
-            display: true,
-            text: 'Technologies and Languages Proficiency (0-10)',
-        },
-    },
-    scales: {
-        y: {
-            beginAtZero: true,
-            max: 10,
-        },
-    },
-};
+export const graphTitle = 'Technologies and Languages Proficiency (0-10)';
 
 export const navigationLinks = [
     { name: 'Overview', href: '#overview' },
