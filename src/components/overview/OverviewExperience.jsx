@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { workExperienceData } from '../../data/data';
 import OverviewExperienceItem from './OverviewExperienceItem';
-import './MobileExperience.css'; // Add CSS for animation
+import './OverviewExperience.css'; // Add CSS for animation
 
-const MobileExperience = () => {
+const OverviewExperience = () => {
     useEffect(() => {
         const handleScroll = () => {
             const elements = document.querySelectorAll('.animate-grow-in');
@@ -45,4 +45,4 @@ const MobileExperience = () => {
     );
 };
 
-export default MobileExperience;
+export default OverviewExperience;
