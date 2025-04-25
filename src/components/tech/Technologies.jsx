@@ -10,6 +10,7 @@ const categoryIcons = {
   'Development Tools': <FaTools className="text-yellow-600 text-3xl mr-4" />,
   'Contact Center Technologies': <FaDatabase className="text-purple-600 text-3xl mr-4" />,
   'Cloud and Communication Services': <FaCloud className="text-teal-600 text-3xl mr-4" />,
+  'Contact Center Platforms': <FaDatabase className="text-purple-600 text-3xl mr-4" />,
 };
 
 const languageIcons = {
@@ -74,14 +75,43 @@ const Technologies = () => {
               {categoryIcons[tech.category] || <FaTools className="text-gray-600 text-3xl mr-4" />}
               <h3 className="text-xl font-bold text-gray-800">{tech.category}</h3>
             </div>
-            <ul className="list-disc list-inside text-gray-600 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {tech.items.map((item, itemIndex) => (
-                <li key={itemIndex} className="flex items-center">
-                  {languageIcons[item] || frameworkIcons[item] || developmentToolsIcons[item] || <FaCode className="text-blue-500 mr-2 text-xl" />}
-                  {item}
-                </li>
-              ))}
-            </ul>
+            {tech.category === 'Contact Center Platforms' ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {tech.items.map((platform, platformIndex) => (
+                  <div key={platformIndex} className="bg-gray-100 p-4 rounded-md shadow-sm">
+                    <h4 className="text-lg font-semibold text-gray-700">{platform.platform}</h4>
+                    <p className="text-sm text-gray-600">{platform.description}</p>
+                    <h5 className="text-md font-bold text-gray-800 mt-2">APIs:</h5>
+                    <ul className="list-disc list-inside text-gray-600">
+                      {platform.apis.map((api, apiIndex) => (
+                        <li key={apiIndex}>{api}</li>
+                      ))}
+                    </ul>
+                    <h5 className="text-md font-bold text-gray-800 mt-2">Components:</h5>
+                    <ul className="list-disc list-inside text-gray-600">
+                      {platform.components.map((component, componentIndex) => (
+                        <li key={componentIndex}>{component}</li>
+                      ))}
+                    </ul>
+                    <h5 className="text-md font-bold text-gray-800 mt-2">Management:</h5>
+                    <ul className="list-disc list-inside text-gray-600">
+                      {platform.management.map((management, managementIndex) => (
+                        <li key={managementIndex}>{management}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <ul className="list-disc list-inside text-gray-600 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {tech.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="flex items-center">
+                    {languageIcons[item] || frameworkIcons[item] || developmentToolsIcons[item] || <FaCode className="text-blue-500 mr-2 text-xl" />}
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>

@@ -103,27 +103,102 @@ export const technologiesData = [
         items: ['Visual Studio', 'TFS', 'Jira', 'Trello', 'Git', 'Bitbucket', 'Github', 'Postman', 'Rollbar', 'Wireshark', 'VS Code', 'GitHub Copilot', 'OpenAI ChatGPT', 'Meta.ai', 'Confluence', 'Slack', 'Microsoft Teams']
     },
     {
-        category: 'Contact Center Technologies',
+        category: 'Contact Center Platforms',
         items: [
-            'Avaya Elite (AES, CM, Tsapi/ASAI/DMCC, CIE - customer interaction express, AACC - Avaya Aura Contact center)',
-            'ININ (Handlers, PureConnect, ICELib)',
-            'Voxtron - VCC (IVR Scripts, Monitoring SDK, WDS, CC integration)'
-        ]
+            {
+                platform: 'ININ (PureConnect / Genesys)',
+                description: 'ININ IceLib Client-side SDK implementation to view all events from the switch in the form of watches and custom notifications.',
+                apis: [
+                    'IceLib API',
+                    'Dialer API',
+                    'Custom Notifications',
+                ],
+                components: [
+                    'Call Queue watches to monitor calls',
+                    'Workgroups watches to monitor agents',
+                    'Statistics watches to monitor stats',
+                    'Custom notification to get extra events',
+                ],
+                management: [
+                    'Interaction Administrator - Creation and handling of Users, Workgroups, Skills, Lines, Stations, Outbound campaigns, Contact Lists',
+                    'Interaction Designer Management - Create, handle, and publish handlers for inbound and outbound for ACD and custom call routing',
+                    'Interaction Attendant - Create, handle, and publish inbound and outbound call flows',
+                ],
+            },
+            {
+                platform: 'Avaya',
+                description: 'Avaya TSAPI and ASAI protocol implementation to view all events from the switch.',
+                apis: [
+                    'TSAPI',
+                    'ASAI',
+                ],
+                components: [
+                    'Domain controls for skills, VDNs, and stations',
+                    'Agent status query',
+                    'Adjunct handling/Call routing',
+                    'Call and agent controls',
+                ],
+                management: [
+                    'Skills, VDNs, stations, agents management via CM',
+                    'System variables management and communication',
+                    'Vector management – to change vectors for changing call routing paths and accomplish Afiniti business needs',
+                ],
+            },
+            {
+                platform: 'Twilio',
+                description: 'Twilio API implementation for programmable voice, SMS, and SIP communication.',
+                apis: [
+                    'Twilio Functions',
+                    'TwiML',
+                    'Programmable Voice API',
+                    'Elastic SIP Trunking',
+                ],
+                components: [
+                    'Programmable Voice for call handling',
+                    'SMS for messaging',
+                    'Elastic SIP Trunking for BYOC (Bring Your Own Carrier)',
+                ],
+                management: [
+                    'Twilio Console for managing numbers, trunks, and call flows',
+                ],
+            },
+            {
+                platform: 'Asterisk',
+                description: 'Asterisk PBX integration for call routing and handling.',
+                apis: [
+                    'AMI (Asterisk Manager Interface)',
+                    'AGI (Asterisk Gateway Interface)',
+                    'ARI (Asterisk REST Interface)',
+                ],
+                components: [
+                    'Call routing and handling',
+                    'Conference calling',
+                    'Call masking',
+                ],
+                management: [
+                    'Dialplan management',
+                    'FreePBX for GUI-based configuration',
+                ],
+            },
+            {
+                platform: 'Voxtron',
+                description: 'Voxtron VCC integration for IVR and call routing.',
+                apis: [
+                    'SOAP and REST Web Services',
+                    'Monitoring SDK',
+                ],
+                components: [
+                    'IVR Scripts for call flows',
+                    'Call routing via Business Object service',
+                    'Callback handling',
+                ],
+                management: [
+                    'WDS service for agent and caller data',
+                    'Custom TCP server for call flow handling',
+                ],
+            },
+        ],
     },
-    {
-        category: 'Cloud and Communication Services',
-        items: [
-            'Twilio (Functions, TwiML, API, Programmable Voice, SMS, Elastic Switching, SIP Domains, BYOC - Bring Your Own Carrier)',
-            'Asterisk (AMI, AGI, ARI, Dialplan, FreePBX), Async programming, AWS instance management (basic)'
-        ]
-    },
-    {
-        category: 'Network Switches',
-        items: [
-            'PureConnect / Genesys / ININ Interactive Intelligence Contact Center',
-            'Avaya Elite (AES, CM, Tsapi/ASAI/DMCC, CIE - customer interaction express, AACC - Avaya Aura Contact center), Avaya CIE'
-        ]
-    }
 ];
 
 export const projectData = [
