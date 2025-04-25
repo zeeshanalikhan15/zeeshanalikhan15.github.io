@@ -1,7 +1,7 @@
 import React from 'react';
 import { technologiesData } from '../../data/data';
-import { FaCode, FaCogs, FaCloud, FaTools, FaDatabase, FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava, FaReact, FaNodeJs, FaPhoneAlt, FaNetworkWired, FaWindowMaximize } from 'react-icons/fa';
-import { SiRuby, SiCplusplus, SiDotnet, SiTailwindcss, SiBoost, SiRubyonrails } from 'react-icons/si';
+import { FaCode, FaCogs, FaCloud, FaTools, FaDatabase, FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava, FaReact, FaNodeJs, FaPhoneAlt, FaNetworkWired, FaWindowMaximize, FaGitAlt, FaGithub, FaBitbucket, FaTrello, FaJira, FaSlack, FaMicrosoft } from 'react-icons/fa';
+import { SiRuby, SiCplusplus, SiDotnet, SiTailwindcss, SiBoost, SiRubyonrails, SiPostman, SiWireshark, SiConfluence } from 'react-icons/si';
 import { TbBrandCSharp } from 'react-icons/tb';
 
 const categoryIcons = {
@@ -43,6 +43,26 @@ const frameworkIcons = {
   SIP: <FaCode className="text-blue-500 mr-2 text-xl" />,
 };
 
+const developmentToolsIcons = {
+  'Visual Studio': <FaCode className="text-blue-500 mr-2 text-xl" />,
+  TFS: <FaCode className="text-blue-500 mr-2 text-xl" />,
+  Jira: <FaJira className="text-blue-600 mr-2 text-xl" />,
+  Trello: <FaTrello className="text-blue-500 mr-2 text-xl" />,
+  Git: <FaGitAlt className="text-orange-500 mr-2 text-xl" />,
+  Bitbucket: <FaBitbucket className="text-blue-500 mr-2 text-xl" />,
+  Github: <FaGithub className="text-gray-800 mr-2 text-xl" />,
+  Postman: <SiPostman className="text-orange-500 mr-2 text-xl" />,
+  Rollbar: <FaTools className="text-purple-500 mr-2 text-xl" />,
+  Wireshark: <SiWireshark className="text-blue-500 mr-2 text-xl" />,
+  'VS Code': <FaCode className="text-blue-500 mr-2 text-xl" />,
+  'GitHub Copilot': <FaGithub className="text-gray-800 mr-2 text-xl" />,
+  'OpenAI ChatGPT': <FaCode className="text-green-500 mr-2 text-xl" />,
+  'Meta.ai': <FaCode className="text-blue-500 mr-2 text-xl" />,
+  Confluence: <SiConfluence className="text-blue-500 mr-2 text-xl" />,
+  Slack: <FaSlack className="text-purple-500 mr-2 text-xl" />,
+  'Microsoft Teams': <FaMicrosoft className="text-blue-500 mr-2 text-xl" />,
+};
+
 const Technologies = () => {
   return (
     <section id="technologies" className="my-8 p-6 bg-gray-200 shadow-md rounded-lg">
@@ -57,7 +77,7 @@ const Technologies = () => {
             <ul className="list-disc list-inside text-gray-600 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {tech.items.map((item, itemIndex) => (
                 <li key={itemIndex} className="flex items-center">
-                  {languageIcons[item] || frameworkIcons[item] || <FaCode className="text-blue-500 mr-2 text-xl" />}
+                  {languageIcons[item] || frameworkIcons[item] || developmentToolsIcons[item] || <FaCode className="text-blue-500 mr-2 text-xl" />}
                   {item}
                 </li>
               ))}
