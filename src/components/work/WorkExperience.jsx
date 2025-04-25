@@ -13,20 +13,19 @@ const WorkExperience = () => {
       <p className="text-lg text-gray-600 mb-6 text-center">
         A detailed overview of my professional journey and key contributions.
       </p>
-      <div className="space-y-12">
+      <div className="space-y-8">
         {workExperienceData.map((experience, index) => {
           const Icon = avatarIcons[index % avatarIcons.length];
           const colorClass = avatarColors[index % avatarColors.length];
+          const isLeftAligned = index % 2 === 0;
+
           return (
             <WorkExperienceItem
               key={index}
+              icon={<Icon className={`text-2xl ${colorClass}`} />}
+              isLeftAligned={isLeftAligned}
+              title={experience.title}
               date={experience.date}
-              title={
-                <div className="flex items-center space-x-3">
-                  <Icon className={`text-2xl ${colorClass}`} />
-                  <span>{experience.title}</span>
-                </div>
-              }
               company={experience.company}
               location={experience.location}
               description={experience.description}
