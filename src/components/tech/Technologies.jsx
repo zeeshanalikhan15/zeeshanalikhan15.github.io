@@ -1,7 +1,7 @@
 import React from 'react';
 import { technologiesData } from '../../data/data';
-import { FaCode, FaCogs, FaCloud, FaTools, FaDatabase, FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava, FaReact, FaNodeJs, FaPhoneAlt, FaNetworkWired, FaWindowMaximize, FaGitAlt, FaGithub, FaBitbucket, FaTrello, FaJira, FaSlack, FaMicrosoft } from 'react-icons/fa';
-import { SiRuby, SiCplusplus, SiDotnet, SiTailwindcss, SiBoost, SiRubyonrails, SiPostman, SiWireshark, SiConfluence } from 'react-icons/si';
+import { FaCode, FaCogs, FaCloud, FaTools, FaDatabase, FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava, FaReact, FaNodeJs, FaPhoneAlt, FaNetworkWired, FaWindowMaximize, FaGitAlt, FaGithub, FaBitbucket, FaTrello, FaJira, FaSlack, FaMicrosoft, FaHeadset, FaComments } from 'react-icons/fa'; // Added FaComments
+import { SiRuby, SiCplusplus, SiDotnet, SiTailwindcss, SiBoost, SiRubyonrails, SiPostman, SiWireshark, SiConfluence, SiAsterisk } from 'react-icons/si';
 import { TbBrandCSharp } from 'react-icons/tb';
 
 const categoryIcons = {
@@ -10,7 +10,15 @@ const categoryIcons = {
   'Development Tools': <FaTools className="text-yellow-600 text-3xl mr-4" />,
   'Contact Center Technologies': <FaDatabase className="text-purple-600 text-3xl mr-4" />,
   'Cloud and Communication Services': <FaCloud className="text-teal-600 text-3xl mr-4" />,
-  'Contact Center Platforms': <FaDatabase className="text-purple-600 text-3xl mr-4" />,
+  'Contact Center Platforms': <FaHeadset className="text-purple-600 text-3xl mr-4" />, // Updated to FaHeadset
+};
+
+const platformIcons = {
+  ININ: <FaComments className="text-blue-500 mr-2 text-xl" />, // Updated to FaComments
+  Avaya: <FaPhoneAlt className="text-red-500 mr-2 text-xl" />,
+  Twilio: <FaCloud className="text-blue-500 mr-2 text-xl" />,
+  Asterisk: <SiAsterisk className="text-orange-500 mr-2 text-xl" />,
+  Voxtron: <FaTools className="text-green-500 mr-2 text-xl" />,
 };
 
 const languageIcons = {
@@ -79,7 +87,10 @@ const Technologies = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {tech.items.map((platform, platformIndex) => (
                   <div key={platformIndex} className="bg-gray-100 p-4 rounded-md shadow-sm">
-                    <h4 className="text-lg font-semibold text-gray-700">{platform.platform}</h4>
+                    <div className="flex items-center mb-2">
+                      {platformIcons[platform.platform.split(' ')[0]] || <FaDatabase className="text-gray-500 mr-2 text-xl" />}
+                      <h4 className="text-lg font-semibold text-gray-700">{platform.platform}</h4>
+                    </div>
                     <p className="text-sm text-gray-600">{platform.description}</p>
                     <h5 className="text-md font-bold text-gray-800 mt-2">APIs:</h5>
                     <ul className="list-disc list-inside text-gray-600">
