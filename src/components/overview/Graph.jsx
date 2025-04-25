@@ -1,21 +1,22 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
-import { proficiencyData, experienceData, mobileGraphOptions } from '../../data/data';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const MobileGraphs = () => {
+const Graph = ({ graphOptions, proficiencyDataset, experienceDataset, isMobile }) => {
+    const options = isMobile ? { ...graphOptions, indexAxis: 'y' } : graphOptions; // Dynamically set indexAxis
+
     return (
         <>
             <div className="relative h-96 w-full">
-                <Bar data={proficiencyData} options={mobileGraphOptions} />
+                <Bar data={proficiencyDataset} options={options} />
             </div>
             <div className="relative h-96 w-full mt-8">
-                <Bar data={experienceData} options={mobileGraphOptions} />
+                <Bar data={experienceDataset} options={options} />
             </div>
         </>
     );
 };
 
-export default MobileGraphs;
+export default Graph;
