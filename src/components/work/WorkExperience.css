@@ -5,21 +5,43 @@
   padding: 20px;
 }
 
-  .work-experience h2 {
-    font-size: 24px;
-    color: #333;
-  }
+.work-experience h2 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
 
-  .work-experience p {
-    margin: 0 0 10px 0;
-  }
+.work-experience p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
 
-  .work-experience ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+.work-experience ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .work-experience li {
-    margin-bottom: 5px;
-  }
+.work-experience li {
+  margin-bottom: 5px;
+}
+
+.work-experience .space-y-12>div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-experience .space-y-12>div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.work-experience img {
+  border: 2px solid #e5e7eb;
+  /* Light gray border */
+  transition: transform 0.3s ease;
+}
+
+.work-experience img:hover {
+  transform: scale(1.1);
+}
