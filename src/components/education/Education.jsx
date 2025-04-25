@@ -19,10 +19,10 @@ const Education = () => {
                             </div>
                         </div>
                         <h4 className="text-lg font-semibold text-gray-700 mb-2">Courses</h4>
-                        <ul className="list-disc list-inside text-gray-600 mb-4">
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-600 mb-4">
                             {education.courses.map((course, courseIndex) => (
                                 <li key={courseIndex} className="flex items-center">
-                                    <FaBook className="text-blue-600 mr-4 text-xl" />
+                                    <FaBook className="text-blue-600 mr-2 text-xl" />
                                     {course}
                                 </li>
                             ))}
