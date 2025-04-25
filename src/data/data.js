@@ -285,28 +285,7 @@ export const experienceData = {
     ],
 };
 
-export const mobileGraphOptions = {
-    responsive: true,
-    maintainAspectRatio: false,
-    indexAxis: 'y',
-    plugins: {
-        legend: {
-            position: 'top',
-        },
-        title: {
-            display: true,
-            text: 'Technologies and Languages Proficiency (0-10)',
-        },
-    },
-    scales: {
-        x: {
-            beginAtZero: true,
-            max: 10,
-        },
-    },
-};
-
-export const desktopGraphOptions = {
+export const graphOptions = {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
