@@ -1,11 +1,11 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
-import { proficiencyData, experienceData, graphOptions } from '../../data/data';
+import { proficiencyData, experienceData } from '../../data/data';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const DesktopGraphs = () => {
+const DesktopGraphs = ({ graphOptions }) => {
     return (
         <>
             <div className="relative h-64 w-full">
