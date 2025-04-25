@@ -1,13 +1,20 @@
 import React from 'react';
-import { FaCode, FaServer, FaCloud, FaPhoneAlt, FaProjectDiagram } from 'react-icons/fa';
+import { FaCode, FaServer, FaCloud, FaPhoneAlt, FaProjectDiagram, FaSyncAlt, FaCogs, FaDatabase, FaTools, FaNetworkWired, FaHeadset, FaUsers } from 'react-icons/fa'; // Added more unique icons
 import { projectData } from '../../data/data';
 
 const projectIcons = {
-  'virtualQ.Net': <FaCode className="text-blue-500 mr-2 text-xl" />,
+  'virtualQ.Net': <FaCogs className="text-blue-500 mr-2 text-xl" />,
   'PureConnect / Genesys / ININ Simulator': <FaServer className="text-green-500 mr-2 text-xl" />,
   'X-Agent Application for ININ': <FaPhoneAlt className="text-purple-500 mr-2 text-xl" />,
-  'Connector Auto Updater': <FaCloud className="text-orange-500 mr-2 text-xl" />,
+  'Connector Auto Updater': <FaSyncAlt className="text-orange-500 mr-2 text-xl" />,
   'Avaya Elite Simulator': <FaProjectDiagram className="text-red-500 mr-2 text-xl" />,
+  'Avaya CIE Connector': <FaNetworkWired className="text-teal-500 mr-2 text-xl" />,
+  'vQube Asterisk Connector': <FaDatabase className="text-indigo-500 mr-2 text-xl" />,
+  'Voxtron QConnect': <FaTools className="text-yellow-500 mr-2 text-xl" />,
+  'Avaya Elite Connector': <FaHeadset className="text-purple-600 mr-2 text-xl" />, // Added unique icon
+  'Avaya AACC Connector': <FaNetworkWired className="text-blue-600 mr-2 text-xl" />, // Added unique icon
+  'PureConnect / Genesys / ININ Contact Center Integration with Afiniti': <FaUsers className="text-green-600 mr-2 text-xl" />, // Added unique icon
+  'Agent Application for Afiniti': <FaPhoneAlt className="text-orange-600 mr-2 text-xl" />, // Added unique icon
 };
 
 const Projects = () => {
@@ -17,7 +24,6 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projectData.map((project, index) => (
           <div key={index} className="bg-gray-100 p-4 rounded-md shadow-sm text-left">
-            {/* Updated text alignment to left */}
             <div className="flex items-center mb-2">
               {projectIcons[project.title] || <FaCode className="text-gray-500 mr-2 text-xl" />}
               <h4 className="text-lg font-semibold text-gray-700">{project.title}</h4>
