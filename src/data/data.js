@@ -259,33 +259,14 @@ export const contactInfoData = {
     githubText: 'GitHub/ZeeshanAliKhan15'
 };
 
-export const proficiencyData = {
-    labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Sockets', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
-    datasets: [
-        {
-            label: 'Proficiency',
-            data: [9, 5, 6, 8.5, 8, 7.5, 8, 8.5, 8, 9, 8.5, 5, 7, 6.5],
-            backgroundColor: 'rgba(54, 162, 235, 0.6)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 1,
-        },
-    ],
+export const graphData = {
+    title: 'Technologies and Languages Proficiency (0-10)',
+    skills: ['C#', 'Ruby', 'C++', 'JavaScript', 'SQL', 'HTML', 'CSS', 'Dot Net framework', 'Dot Net core', 'WPF', 'WinForms', 'WCF web services REST/SOAP', 'React.js', 'Node.js'],
+    proficiencyLabel: 'Proficiency',
+    proficiencyData: [9, 5, 6, 8.5, 8, 7.5, 8, 8.5, 8, 9, 8.5, 5, 7, 6.5],
+    experienceLabel: 'Years of Experience',
+    experienceData: [9, 2, 6, 4, 6, 8, 5, 7, 9, 3, 4, 3, 2, 1.5],
 };
-
-export const experienceData = {
-    labels: ['C#', 'Ruby', 'C++', 'WPF', 'WCF', 'TCP/IP', 'Sockets', 'VOIP', 'SIP', 'Twilio', 'Asterisk', 'AWS', 'React', 'Node.js'],
-    datasets: [
-        {
-            label: 'Years of Experience',
-            data: [9, 2, 6, 4, 6, 8, 5, 7, 9, 3, 4, 3, 2, 1.5],
-            backgroundColor: 'rgba(75, 192, 192, 0.6)',
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 1,
-        },
-    ],
-};
-
-export const graphTitle = 'Technologies and Languages Proficiency (0-10)';
 
 export const navigationLinks = [
     { name: 'Overview', href: '#overview' },
