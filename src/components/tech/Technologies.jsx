@@ -1,6 +1,8 @@
 import React from 'react';
 import { technologiesData } from '../../data/data';
-import { FaCode, FaCogs, FaCloud, FaTools, FaDatabase } from 'react-icons/fa';
+import { FaCode, FaCogs, FaCloud, FaTools, FaDatabase, FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava } from 'react-icons/fa';
+import { SiRuby, SiCplusplus } from 'react-icons/si'; // Removed SiMicrosoftsqlserver
+import { TbBrandCSharp } from 'react-icons/tb'; // Added TbBrandCSharp
 
 const categoryIcons = {
   Languages: <FaCode className="text-blue-600 text-3xl mr-4" />,
@@ -8,6 +10,18 @@ const categoryIcons = {
   'Development Tools': <FaTools className="text-yellow-600 text-3xl mr-4" />,
   'Contact Center Technologies': <FaDatabase className="text-purple-600 text-3xl mr-4" />,
   'Cloud and Communication Services': <FaCloud className="text-teal-600 text-3xl mr-4" />,
+};
+
+const languageIcons = {
+  'C#': <TbBrandCSharp className="text-blue-600 mr-2 text-xl" />, // Updated to TbBrandCSharp
+  Ruby: <SiRuby className="text-red-600 mr-2 text-xl" />,
+  'C++': <SiCplusplus className="text-blue-500 mr-2 text-xl" />,
+  JavaScript: <FaJs className="text-yellow-500 mr-2 text-xl" />,
+  HTML: <FaHtml5 className="text-orange-600 mr-2 text-xl" />,
+  CSS: <FaCss3Alt className="text-blue-500 mr-2 text-xl" />,
+  Python: <FaPython className="text-green-500 mr-2 text-xl" />,
+  Java: <FaJava className="text-red-500 mr-2 text-xl" />,
+  SQL: <FaDatabase className="text-blue-500 mr-2 text-xl" />, // Replaced with FaDatabase
 };
 
 const Technologies = () => {
@@ -24,7 +38,7 @@ const Technologies = () => {
             <ul className="list-disc list-inside text-gray-600 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {tech.items.map((item, itemIndex) => (
                 <li key={itemIndex} className="flex items-center">
-                  <FaCode className="text-blue-500 mr-2 text-xl" /> {/* Default icon */}
+                  {languageIcons[item] || <FaCode className="text-blue-500 mr-2 text-xl" />}
                   {item}
                 </li>
               ))}
