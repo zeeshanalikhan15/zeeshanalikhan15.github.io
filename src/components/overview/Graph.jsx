@@ -4,8 +4,8 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const MobileGraphs = ({ graphOptions, proficiencyDataset, experienceDataset }) => {
-    const options = { ...graphOptions, indexAxis: 'y' }; // Add indexAxis for mobile
+const Graph = ({ graphOptions, proficiencyDataset, experienceDataset, isMobile }) => {
+    const options = isMobile ? { ...graphOptions, indexAxis: 'y' } : graphOptions; // Dynamically set indexAxis
 
     return (
         <>
@@ -19,4 +19,4 @@ const MobileGraphs = ({ graphOptions, proficiencyDataset, experienceDataset }) =
     );
 };
 
-export default MobileGraphs;
+export default Graph;
