@@ -212,7 +212,7 @@ export const projectData = [
             { label: 'Git', url: 'https://github.com/virtualq/virtualQ.NET' },
         ],
         company: 'virtualQ',
-        role: 'Call Center Developer',
+        role: 'Senior Software Engineer',
         anchorId: 'project-virtualq-net',
     },
     {
@@ -224,7 +224,7 @@ export const projectData = [
             { label: 'Git', url: 'https://github.com/virtualq/Avaya-Elite-Release' },
         ],
         company: 'virtualQ',
-        role: 'Call Center Developer',
+        role: 'Senior Software Engineer',
         anchorId: 'project-avaya-elite-connector',
     },
     {
@@ -272,7 +272,7 @@ export const projectData = [
             { label: 'Git', url: 'https://github.com/virtualq/QConnect-Release' },
         ],
         company: 'virtualQ',
-        role: 'Call Center Developer',
+        role: 'Senior Software Engineer',
         anchorId: 'project-voxtron-qconnect',
     },
     {

@@ -19,9 +19,11 @@ const WorkExperience = () => {
           const colorClass = avatarColors[index % avatarColors.length];
           const isLeftAligned = index % 2 === 0;
 
-          // Filter projects related to the current job experience based on company and role
+          // Filter projects related to the current job experience based on company and role (case-insensitive)
           const relatedProjects = projectData.filter(
-            project => project.company === experience.company && project.role === experience.title
+            project =>
+              project.company.toLowerCase() === experience.company.toLowerCase() &&
+              project.role.toLowerCase() === experience.title.toLowerCase()
           );
 
           return (
