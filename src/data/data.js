@@ -211,6 +211,9 @@ export const projectData = [
             { label: 'Nuget', url: 'https://www.nuget.org/packages/virtualQ.API.virtualQNetClient' },
             { label: 'Git', url: 'https://github.com/virtualq/virtualQ.NET' },
         ],
+        company: 'virtualQ',
+        role: 'Senior Software Engineer',
+        anchorId: 'project-virtualq-net',
     },
     {
         title: 'Avaya Elite Connector',
@@ -220,6 +223,9 @@ export const projectData = [
         links: [
             { label: 'Git', url: 'https://github.com/virtualq/Avaya-Elite-Release' },
         ],
+        company: 'virtualQ',
+        role: 'Senior Software Engineer',
+        anchorId: 'project-avaya-elite-connector',
     },
     {
         title: 'Avaya AACC Connector',
@@ -229,6 +235,9 @@ export const projectData = [
         links: [
             { label: 'Git', url: 'https://github.com/virtualq/Avaya-AACC-Multicast-Release' },
         ],
+        company: 'virtualQ',
+        role: 'Call Center Developer',
+        anchorId: 'project-avaya-aacc-connector',
     },
     {
         title: 'Avaya CIE Connector',
@@ -238,6 +247,9 @@ export const projectData = [
         links: [
             { label: 'Git', url: 'https://github.com/virtualq/Avaya-CIE-Release' },
         ],
+        company: 'virtualQ',
+        role: 'Call Center Developer',
+        anchorId: 'project-avaya-cie-connector',
     },
     {
         title: 'vQube Asterisk Connector',
@@ -247,6 +259,9 @@ export const projectData = [
         links: [
             { label: 'Git', url: 'https://github.com/virtualq/vQube-Release' },
         ],
+        company: 'virtualQ',
+        role: 'Call Center Developer',
+        anchorId: 'project-vqube-asterisk-connector',
     },
     {
         title: 'Voxtron QConnect',
@@ -256,36 +271,54 @@ export const projectData = [
         links: [
             { label: 'Git', url: 'https://github.com/virtualq/QConnect-Release' },
         ],
+        company: 'virtualQ',
+        role: 'Senior Software Engineer',
+        anchorId: 'project-voxtron-qconnect',
     },
     {
         title: 'PureConnect / Genesys / ININ Contact Center Integration with Afiniti',
         description: 'Integrated ININ switch with Afiniti. It enabled Afiniti to take control of ININ\'s ACD routing. Call routing communication was done with ININ custom notification. Agents and calls states were monitoring with ININ watches. ININ was integrated with Afiniti for both Inbound and Outbound call routing.',
         technologies: 'C#, IceLib API, ININ Dialer API, ININ handlers',
         features: 'Call routing, Call queues monitoring, Agents monitoring, Campaigns monitoring, Stats monitoring',
+        company: 'Afiniti',
+        role: 'Senior Software Engineer',
+        anchorId: 'project-pureconnect-genesys-integration',
     },
     {
         title: 'Avaya Elite Simulator',
         description: 'Developed a simulator server for load testing. This server simulated itself as an Avaya switch. Afiniti connects with this server and performs call routing. Communication was done on a TCP channel with Avaya’s standard ASAI protocol.',
         technologies: 'C#, TCP Async Sockets, Queuing',
         features: 'Call Generation, Agents Generation, ACD routing, Afiniti routing, multiple client connection, heavy load',
+        company: 'Afiniti',
+        role: 'Software Engineer',
+        anchorId: 'project-avaya-elite-simulator',
     },
     {
         title: 'PureConnect / Genesys / ININ Simulator',
         description: 'Developed a simulator for load testing. It simulated itself as an ININ switch. It was an internally integrated simulator with Afiniti. IceLib API’s client side was customized to generate calls and agents. Events were sent to Afiniti for routing.',
         technologies: 'C#, IceLib API, ININ Dialer API, Queuing',
         features: 'Call Generation, Agents Generation, ACD routing',
+        company: 'Afiniti',
+        role: 'Software Engineer',
+        anchorId: 'project-pureconnect-genesys-simulator',
     },
     {
         title: 'X-Agent Application for ININ',
         description: 'Developed a client application that connected with ININ switch. It was able to log in multiple agents and control them. Agents were able to log in for both Inbound and Outbound calls. Agent could automatically answer/drop calls. It was used for load testing scenarios.',
         technologies: 'C#, IceLib API, ININ Dialer API, Queuing',
         features: 'Multiple agent management, Inbound and outbound calls handling, Campaigns login and logout, Automatic connect and drop',
+        company: 'Afiniti',
+        role: 'Analyst Software Engineer',
+        anchorId: 'project-x-agent-application',
     },
     {
         title: 'Agent Application for Afiniti',
         description: 'Developed a softphone agent application. This application was able to connect with a switch and act as an agent. It was developed using Afiniti protocol so it was compatible with all Afiniti integrated switches.',
         technologies: 'C#, Afiniti Protocol, Queuing',
         features: 'Agent actions(Login, Logout, Free, Busy), Call actions(Make call, Answer, Hold, Resume, Drop)',
+        company: 'Afiniti',
+        role: 'Analyst Software Engineer',
+        anchorId: 'project-agent-application',
     },
     {
         title: 'Connector Auto Updater',
@@ -295,6 +328,9 @@ export const projectData = [
         links: [
             { label: 'Nuget', url: 'https://www.nuget.org/packages/ConnectorAutoUpdater/' },
         ],
+        company: 'virtualQ',
+        role: 'Call Center Developer',
+        anchorId: 'project-connector-auto-updater',
     },
 ];
 
