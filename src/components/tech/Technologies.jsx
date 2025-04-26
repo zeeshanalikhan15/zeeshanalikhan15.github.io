@@ -75,13 +75,13 @@ const developmentToolsIcons = {
 const Technologies = () => {
   return (
     <section id="technologies" className="my-8 p-6 bg-gray-200 shadow-md rounded-lg">
-      <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">Technologies</h2>
-      <div className="space-y-10">
+      <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Technologies</h2>
+      <div className="space-y-8">
         {technologiesData.map((tech, index) => (
-          <div key={index} className="relative bg-white p-8 rounded-md shadow-md text-left">
-            <div className="flex items-center mb-4">
-              {categoryIcons[tech.category] || <FaTools className="text-gray-600 text-3xl mr-4" />}
-              <h3 className="text-xl font-bold text-gray-800">{tech.category}</h3>
+          <div key={index} className="relative bg-gray-50 p-6 rounded-md shadow-sm text-left">
+            <div className="flex items-center mb-3">
+              {categoryIcons[tech.category] || <FaTools className="text-gray-500 text-2xl mr-3" />}
+              <h3 className="text-lg font-medium text-gray-800">{tech.category}</h3>
             </div>
             {tech.category === 'Contact Center Platforms' ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -117,8 +117,8 @@ const Technologies = () => {
               <ul className="list-disc list-inside text-gray-600 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {tech.items.map((item, itemIndex) => (
                   <li key={itemIndex} className="flex items-center">
-                    {languageIcons[item] || frameworkIcons[item] || developmentToolsIcons[item] || <FaCode className="text-blue-500 mr-2 text-xl" />}
-                    {item}
+                    {languageIcons[item] || frameworkIcons[item] || developmentToolsIcons[item] || <FaCode className="text-gray-500 mr-2 text-lg" />}
+                    <span className="text-sm">{item}</span>
                   </li>
                 ))}
               </ul>

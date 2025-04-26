@@ -5,27 +5,44 @@
   padding: 20px;
 }
 
-  .projects h2 {
-    font-size: 24px;
-    color: #333;
+.projects h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.projects p {
+  margin: 0 0 10px 0;
+}
+
+.projects ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects li {
+  margin-bottom: 5px;
+}
+
+/* ContactInfo.css */
+
+.projects p {
+  word-wrap: break-word;
+  /* Allow long URLs to wrap */
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
   }
 
-  .projects p {
-    margin: 0 0 10px 0;
+  50% {
+    opacity: 0;
   }
+}
 
-  .projects ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .projects li {
-    margin-bottom: 5px;
-  }
-
-  /* ContactInfo.css */
-
-  .projects p {
-    word-wrap: break-word; /* Allow long URLs to wrap */
-  }
+.animate-blink {
+  animation: blink 1s ease-in-out infinite;
+}
