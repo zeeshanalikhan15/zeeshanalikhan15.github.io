@@ -6,15 +6,17 @@ function classNames(...classes) {
 
 const DesktopNavigation = ({ navigation, current, handleClick }) => {
     return (
-        <div className="flex space-x-4">
+        <div className="flex space-x-1">
             {navigation.map((item) => (
                 <a
                     key={item.name}
                     href={item.href}
                     onClick={(e) => handleClick(e, item.href, item.name)}
                     className={classNames(
-                        item.name === current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'rounded-md px-3 py-2 text-sm font-medium'
+                        item.name === current
+                            ? 'text-primary font-bold border-b-2 border-primary'
+                            : 'text-gray-300 hover:text-white hover:text-glow transition-all duration-300 hover:-translate-y-0.5',
+                        'rounded-md px-3 py-2 text-sm font-medium transition-all duration-300'
                     )}
                     aria-current={item.name === current ? 'page' : undefined}
                 >

@@ -74,54 +74,67 @@ const developmentToolsIcons = {
 
 const Technologies = () => {
   return (
-    <section id="technologies" className="my-8 p-6 bg-gray-200 shadow-md rounded-lg">
-      <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Technologies</h2>
-      <div className="space-y-8">
+    <section id="technologies" className="my-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 className="text-4xl sm:text-5xl font-heading font-bold text-center mb-16">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Technologies</span>
+      </h2>
+
+      <div className="space-y-12">
         {technologiesData.map((tech, index) => (
-          <div key={index} className="relative bg-gray-50 p-6 rounded-md shadow-sm text-left">
-            <div className="flex items-center mb-3">
-              {categoryIcons[tech.category] || <FaTools className="text-gray-500 text-2xl mr-3" />}
-              <h3 className="text-lg font-medium text-gray-800">{tech.category}</h3>
+          <div key={index} className="glass p-8 rounded-3xl relative overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_-10px_rgba(188,19,254,0.3)] border border-white/5">
+            <div className="absolute top-0 right-0 w-40 h-40 bg-secondary/10 rounded-full blur-[60px] -z-10"></div>
+
+            <div className="flex items-center mb-8 border-b border-white/10 pb-4">
+              <div className="p-3 rounded-xl bg-white/5 text-secondary text-2xl">
+                {categoryIcons[tech.category] || <FaTools />}
+              </div>
+              <h3 className="ml-4 text-2xl font-bold text-white">{tech.category}</h3>
             </div>
+
             {tech.category === 'Contact Center Platforms' ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {tech.items.map((platform, platformIndex) => (
-                  <div key={platformIndex} className="bg-gray-100 p-4 rounded-md shadow-sm">
-                    <div className="flex items-center mb-2">
-                      {platformIcons[platform.platform.split(' ')[0]] || <FaDatabase className="text-gray-500 mr-2 text-xl" />}
-                      <h4 className="text-lg font-semibold text-gray-700">{platform.platform}</h4>
+                  <div key={platformIndex} className="bg-dark-100/50 p-6 rounded-xl hover:bg-dark-100/80 transition-colors border border-white/5">
+                    <div className="flex items-center mb-3">
+                      <div className="text-primary text-xl mr-3">
+                        {platformIcons[platform.platform.split(' ')[0]] || <FaDatabase />}
+                      </div>
+                      <h4 className="text-lg font-bold text-white">{platform.platform}</h4>
                     </div>
-                    <p className="text-sm text-gray-600">{platform.description}</p>
-                    <h5 className="text-md font-bold text-gray-800 mt-2">APIs:</h5>
-                    <ul className="list-disc list-inside text-gray-600">
-                      {platform.apis.map((api, apiIndex) => (
-                        <li key={apiIndex}>{api}</li>
-                      ))}
-                    </ul>
-                    <h5 className="text-md font-bold text-gray-800 mt-2">Components:</h5>
-                    <ul className="list-disc list-inside text-gray-600">
-                      {platform.components.map((component, componentIndex) => (
-                        <li key={componentIndex}>{component}</li>
-                      ))}
-                    </ul>
-                    <h5 className="text-md font-bold text-gray-800 mt-2">Management:</h5>
-                    <ul className="list-disc list-inside text-gray-600">
-                      {platform.management.map((management, managementIndex) => (
-                        <li key={managementIndex}>{management}</li>
-                      ))}
-                    </ul>
+                    <p className="text-sm text-gray-400 mb-4">{platform.description}</p>
+
+                    <div className="space-y-3">
+                      <div>
+                        <h5 className="text-xs font-semibold text-secondary uppercase tracking-wider mb-1">APIs</h5>
+                        <div className="flex flex-wrap gap-2">
+                          {platform.apis.map((api, i) => (
+                            <span key={i} className="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">{api}</span>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <h5 className="text-xs font-semibold text-secondary uppercase tracking-wider mb-1">Components</h5>
+                        <ul className="list-disc list-inside text-xs text-gray-400">
+                          {platform.components.slice(0, 2).map((comp, i) => (
+                            <li key={i}>{comp}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 ))}
               </div>
             ) : (
-              <ul className="list-disc list-inside text-gray-600 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="flex flex-wrap gap-4">
                 {tech.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-center">
-                    {languageIcons[item] || frameworkIcons[item] || developmentToolsIcons[item] || <FaCode className="text-gray-500 mr-2 text-lg" />}
-                    <span className="text-sm">{item}</span>
-                  </li>
+                  <div key={itemIndex} className="flex items-center px-4 py-3 rounded-xl bg-dark-100/50 border border-white/5 hover:border-primary/50 hover:bg-dark-200/80 transition-all duration-300 group">
+                    <span className="text-xl mr-3 text-gray-400 group-hover:text-primary transition-colors">
+                      {languageIcons[item] || frameworkIcons[item] || developmentToolsIcons[item] || <FaCode />}
+                    </span>
+                    <span className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors">{item}</span>
+                  </div>
                 ))}
-              </ul>
+              </div>
             )}
           </div>
         ))}
