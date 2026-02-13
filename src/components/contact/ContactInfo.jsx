@@ -7,7 +7,7 @@ function ContactInfo() {
     <section id="contact" className="mt-10 md:mt-20 py-10 md:py-20 bg-black/40 border-t border-white/5 relative">
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent pointer-events-none"></div>
 
-      <div className="max-w-7xl px-4 sm:px-6 lg:px-8 text-left relative z-10">
+      <div className="w-full max-w-none px-4 sm:px-6 md:px-12 lg:px-24 text-left relative z-10">
         <h2 className="text-4xl sm:text-5xl font-heading font-bold mb-6 text-white text-left">{contactInfoData.heading}</h2>
         <p className="text-xl text-gray-400 mb-12 max-w-2xl mr-auto text-left">{contactInfoData.description}</p>
 

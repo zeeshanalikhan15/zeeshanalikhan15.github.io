@@ -5,7 +5,7 @@ import fastLogo from '../../assets/fast-nuces-logo.png';
 
 const Education = () => {
     return (
-        <section id="education" className="my-10 md:my-20 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section id="education" className="my-10 md:my-20 w-full max-w-none px-4 sm:px-6 md:px-12 lg:px-24">
             <h2 className="text-4xl sm:text-5xl font-heading font-bold text-left mb-16">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Education</span>
             </h2>
