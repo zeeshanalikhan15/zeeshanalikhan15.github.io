@@ -15,7 +15,9 @@ const NavigationLinks = ({ navigation, current, handleClick }) => {
                     href={item.href}
                     onClick={(e) => handleClick(e, item.href, item.name)}
                     className={classNames(
-                        item.name === current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        item.name === current
+                            ? 'bg-white/10 text-primary text-shadow-glow font-bold'
+                            : 'text-gray-300 hover:bg-white/5 hover:text-primary hover:text-shadow-glow transition-all duration-300',
                         'block rounded-md px-3 py-2 text-base font-medium'
                     )}
                     aria-current={item.name === current ? 'page' : undefined}

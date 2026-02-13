@@ -37,42 +37,59 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="my-8 p-6 bg-gray-300 shadow-md rounded-lg">
-      <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section id="projects" className="my-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 className="text-4xl sm:text-5xl font-heading font-bold text-center mb-16">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Projects</span>
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projectData.map((project, index) => (
           <div
             key={index}
-            className={`bg-gray-50 p-5 rounded-md shadow-sm text-left relative ${highlightedProject === project.anchorId ? 'ring-4 ring-blue-500' : ''
+            className={`glass p-6 rounded-2xl relative transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-[0_0_25px_-5px_rgba(0,243,255,0.2)] border border-white/5 ${highlightedProject === project.anchorId ? 'ring-2 ring-primary shadow-[0_0_30px_rgba(0,243,255,0.4)]' : ''
               }`}
           >
             <span id={project.anchorId} className="absolute -top-28"></span> {/* Anchor placement */}
-            <div className="flex items-center mb-3">
-              {projectIcons[project.title] || <FaCode className="text-gray-500 mr-2 text-lg" />}
-              <h4 className="text-md font-medium text-gray-800">{project.title}</h4>
+
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl -z-10"></div>
+
+            <div className="flex items-center mb-4">
+              <div className="p-2 rounded-lg bg-dark-200 text-primary text-xl">
+                {projectIcons[project.title] || <FaCode />}
+              </div>
+              <h4 className="ml-3 text-lg font-bold text-white leading-tight">{project.title}</h4>
             </div>
-            <p className="text-sm text-gray-600 mb-2">{project.description}</p>
-            <h5 className="text-sm font-semibold text-gray-700 mt-2">Technologies:</h5>
-            <p className="text-sm text-gray-600">{project.technologies}</p>
-            <h5 className="text-sm font-semibold text-gray-700 mt-2">Features:</h5>
-            <ul className="list-disc list-inside text-gray-600">
-              {project.features.split(', ').map((feature, featureIndex) => (
-                <li key={featureIndex} className="text-sm">{feature}</li>
-              ))}
-            </ul>
+
+            <p className="text-sm text-gray-300 mb-4 line-clamp-3">{project.description}</p>
+
+            <div className="mb-4">
+              <h5 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Technologies</h5>
+              <p className="text-xs text-gray-400 font-mono">{project.technologies}</p>
+            </div>
+
+            <div className="mb-4">
+              <h5 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Features</h5>
+              <ul className="list-disc list-inside text-xs text-gray-400 space-y-1">
+                {project.features.split(', ').slice(0, 3).map((feature, featureIndex) => (
+                  <li key={featureIndex}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+
             {project.links && project.links.length > 0 && (
-              <>
-                <h5 className="text-sm font-semibold text-gray-700 mt-2">Links:</h5>
-                <ul className="list-disc list-inside text-blue-600">
-                  {project.links.map((link, linkIndex) => (
-                    <li key={linkIndex}>
-                      <a href={link.url} target="_blank" rel="noopener noreferrer" className="hover:underline text-sm">
-                        {link.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </>
+              <div className="flex gap-3 mt-auto pt-4 border-t border-white/10">
+                {project.links.map((link, linkIndex) => (
+                  <a
+                    key={linkIndex}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-medium text-white hover:text-primary transition-colors flex items-center gap-1"
+                  >
+                    {link.label} <span aria-hidden="true">&rarr;</span>
+                  </a>
+                ))}
+              </div>
             )}
           </div>
         ))}

@@ -39,15 +39,23 @@ export default function Navigation() {
     setCurrent(name);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+    setCurrent('');
+  };
+
   return (
-    <Disclosure as="nav" className="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 z-50" ref={navRef}>
+    <Disclosure as="nav" className="fixed top-4 left-0 right-0 mx-auto w-[95%] max-w-7xl rounded-2xl glass z-50 transition-all duration-300" ref={navRef}>
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-center">
+          <div className="mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-primary focus:outline-none transition-colors">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -56,16 +64,28 @@ export default function Navigation() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center">
-                <div className="hidden sm:block">
-                  <DesktopNavigation navigation={navigationLinks} current={current} handleClick={handleClick} />
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+                <div className="flex flex-shrink-0 items-center">
+                  <h1 onClick={scrollToTop} className="text-xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary cursor-pointer hover:opacity-80 transition-opacity">
+                    ZAK
+                  </h1>
+                </div>
+                <div className="hidden sm:ml-6 sm:block">
+                  <div className="flex space-x-4">
+                    <DesktopNavigation navigation={navigationLinks} current={current} handleClick={handleClick} />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <MobileNavigation navigation={navigationLinks} current={current} handleClick={handleClick} />
+          <Disclosure.Panel className="sm:hidden glass rounded-b-2xl border-t border-white/5">
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              <NavigationLinks navigation={navigationLinks} current={current} handleClick={(e, href, name) => {
+                handleClick(e, href, name);
+                // Close panel logic would ideally go here if we had access to the close function
+              }} />
+            </div>
           </Disclosure.Panel>
         </>
       )}
