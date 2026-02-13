@@ -46,7 +46,7 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className={`md:glass p-0 md:p-6 rounded-none md:rounded-2xl relative transition-all duration-300 md:hover:transform md:hover:-translate-y-2 md:hover:shadow-[0_0_25px_-5px_rgba(0,243,255,0.2)] md:border md:border-white/5 border-b border-white/10 pb-8 md:pb-6 ${highlightedProject === project.anchorId ? 'ring-2 ring-primary shadow-[0_0_30px_rgba(0,243,255,0.4)]' : ''
+            className={`md:glass p-0 md:p-6 rounded-none md:rounded-2xl relative transition-all duration-300 md:hover:transform md:hover:-translate-y-2 md:hover:shadow-[0_0_25px_-5px_rgba(0,243,255,0.2)] md:border md:border-white/5 border-b border-white/10 pb-8 md:pb-6 text-left ${highlightedProject === project.anchorId ? 'ring-2 ring-primary shadow-[0_0_30px_rgba(0,243,255,0.4)]' : ''
               }`}
           >
             <span id={project.anchorId} className="absolute -top-28"></span> {/* Anchor placement */}
@@ -57,19 +57,19 @@ const Projects = () => {
               <div className="p-2 rounded-lg bg-dark-200 text-primary text-xl">
                 {projectIcons[project.title] || <FaCode />}
               </div>
-              <h4 className="ml-3 text-lg font-bold text-white leading-tight">{project.title}</h4>
+              <h4 className="ml-3 text-lg font-bold text-white leading-tight text-left">{project.title}</h4>
             </div>
 
-            <p className="text-sm text-gray-300 mb-4 line-clamp-3">{project.description}</p>
+            <p className="text-sm text-gray-300 mb-4 line-clamp-3 text-left">{project.description}</p>
 
-            <div className="mb-4">
-              <h5 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Technologies</h5>
-              <p className="text-xs text-gray-400 font-mono">{project.technologies}</p>
+            <div className="mb-4 text-left">
+              <h5 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2 text-left">Technologies</h5>
+              <p className="text-xs text-gray-400 font-mono text-left">{project.technologies}</p>
             </div>
 
-            <div className="mb-4">
-              <h5 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Features</h5>
-              <ul className="list-disc list-inside text-xs text-gray-400 space-y-1">
+            <div className="mb-4 text-left">
+              <h5 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2 text-left">Features</h5>
+              <ul className="list-disc list-inside text-xs text-gray-400 space-y-1 text-left">
                 {project.features.split(', ').slice(0, 3).map((feature, featureIndex) => (
                   <li key={featureIndex}>{feature}</li>
                 ))}
@@ -77,7 +77,7 @@ const Projects = () => {
             </div>
 
             {project.links && project.links.length > 0 && (
-              <div className="flex gap-3 mt-auto pt-4 border-t border-white/10">
+              <div className="flex gap-3 mt-auto pt-4 border-t border-white/10 justify-start">
                 {project.links.map((link, linkIndex) => (
                   <a
                     key={linkIndex}

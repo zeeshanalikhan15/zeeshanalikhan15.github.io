@@ -81,40 +81,40 @@ const Technologies = () => {
 
       <div className="space-y-12">
         {technologiesData.map((tech, index) => (
-          <div key={index} className="md:glass p-0 md:p-8 rounded-none md:rounded-3xl relative overflow-hidden transition-all duration-300 md:hover:shadow-[0_0_30px_-10px_rgba(188,19,254,0.3)] md:border md:border-white/5 border-b border-white/10 pb-8 md:pb-8">
+          <div key={index} className="md:glass p-0 md:p-8 rounded-none md:rounded-3xl relative overflow-hidden transition-all duration-300 md:hover:shadow-[0_0_30px_-10px_rgba(188,19,254,0.3)] md:border md:border-white/5 border-b border-white/10 pb-8 md:pb-8 text-left">
             <div className="absolute top-0 right-0 w-40 h-40 bg-secondary/10 rounded-full blur-[60px] -z-10"></div>
 
             <div className="flex items-center mb-8 border-b border-white/10 pb-4">
               <div className="p-3 rounded-xl bg-white/5 text-secondary text-2xl">
                 {categoryIcons[tech.category] || <FaTools />}
               </div>
-              <h3 className="ml-4 text-2xl font-bold text-white">{tech.category}</h3>
+              <h3 className="ml-4 text-2xl font-bold text-white text-left">{tech.category}</h3>
             </div>
 
             {tech.category === 'Contact Center Platforms' ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {tech.items.map((platform, platformIndex) => (
-                  <div key={platformIndex} className="bg-dark-100/50 p-6 rounded-xl hover:bg-dark-100/80 transition-colors border border-white/5">
+                  <div key={platformIndex} className="bg-dark-100/50 p-6 rounded-xl hover:bg-dark-100/80 transition-colors border border-white/5 text-left">
                     <div className="flex items-center mb-3">
                       <div className="text-primary text-xl mr-3">
                         {platformIcons[platform.platform.split(' ')[0]] || <FaDatabase />}
                       </div>
-                      <h4 className="text-lg font-bold text-white">{platform.platform}</h4>
+                      <h4 className="text-lg font-bold text-white text-left">{platform.platform}</h4>
                     </div>
-                    <p className="text-sm text-gray-400 mb-4">{platform.description}</p>
+                    <p className="text-sm text-gray-400 mb-4 text-left">{platform.description}</p>
 
                     <div className="space-y-3">
                       <div>
-                        <h5 className="text-xs font-semibold text-secondary uppercase tracking-wider mb-1">APIs</h5>
-                        <div className="flex flex-wrap gap-2">
+                        <h5 className="text-xs font-semibold text-secondary uppercase tracking-wider mb-1 text-left">APIs</h5>
+                        <div className="flex flex-wrap gap-2 justify-start">
                           {platform.apis.map((api, i) => (
                             <span key={i} className="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">{api}</span>
                           ))}
                         </div>
                       </div>
                       <div>
-                        <h5 className="text-xs font-semibold text-secondary uppercase tracking-wider mb-1">Components</h5>
-                        <ul className="list-disc list-inside text-xs text-gray-400">
+                        <h5 className="text-xs font-semibold text-secondary uppercase tracking-wider mb-1 text-left">Components</h5>
+                        <ul className="list-disc list-inside text-xs text-gray-400 text-left">
                           {platform.components.slice(0, 2).map((comp, i) => (
                             <li key={i}>{comp}</li>
                           ))}
@@ -125,7 +125,7 @@ const Technologies = () => {
                 ))}
               </div>
             ) : (
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-start">
                 {tech.items.map((item, itemIndex) => (
                   <div key={itemIndex} className="flex items-center px-4 py-3 rounded-xl bg-dark-100/50 border border-white/5 hover:border-primary/50 hover:bg-dark-200/80 transition-all duration-300 group">
                     <span className="text-xl mr-3 text-gray-400 group-hover:text-primary transition-colors">
