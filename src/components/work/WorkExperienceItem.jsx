@@ -12,12 +12,12 @@ const WorkExperienceItem = ({
     projects,
 }) => {
     return (
-        <div className="w-full relative group">
-            <div className="md:glass hover:bg-dark-100/40 p-0 md:p-8 rounded-none md:rounded-3xl transition-all duration-300 md:hover:border-primary/30 md:border md:border-white/5 border-b border-white/10 pb-8 md:pb-8 relative overflow-hidden group-hover:shadow-[0_0_20px_-5px_rgba(0,243,255,0.1)]">
+        <div className="w-full relative group text-left">
+            <div className="md:glass hover:bg-dark-100/40 p-0 md:p-8 rounded-none md:rounded-3xl transition-all duration-300 md:hover:border-primary/30 md:border md:border-white/5 border-b border-white/10 pb-8 md:pb-8 relative overflow-hidden group-hover:shadow-[0_0_20px_-5px_rgba(0,243,255,0.1)] text-left">
                 <div className="hidden md:block absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[60px] -z-10 group-hover:bg-primary/10 transition-colors"></div>
 
                 {/* Header Section */}
-                <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 md:gap-6 mb-6 md:mb-8">
+                <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 md:gap-6 mb-6 md:mb-8 text-left">
                     <div className="flex items-start gap-4 md:gap-6">
                         <div className="p-3 md:p-4 rounded-2xl bg-white/5 border border-white/10 text-primary text-2xl md:text-3xl shrink-0 mt-1 md:mt-0">
                             {icon}
@@ -36,18 +36,18 @@ const WorkExperienceItem = ({
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 text-left">
                     <div className="lg:col-span-2 space-y-6">
                         <div>
-                            <h4 className="hidden md:block text-lg font-semibold text-white mb-3">Overview</h4>
-                            <p className="text-gray-300 leading-relaxed text-sm md:text-base">{description}</p>
+                            <h4 className="hidden md:block text-lg font-semibold text-white mb-3 text-left">Overview</h4>
+                            <p className="text-gray-300 leading-relaxed text-sm md:text-base text-left">{description}</p>
                         </div>
 
                         <div>
-                            <h4 className="hidden md:block text-lg font-semibold text-white mb-3">Key Responsibilities</h4>
-                            <ul className="grid grid-cols-1 gap-2">
+                            <h4 className="hidden md:block text-lg font-semibold text-white mb-3 text-left">Key Responsibilities</h4>
+                            <ul className="grid grid-cols-1 gap-2 text-left">
                                 {responsibilities.map((item, index) => (
-                                    <li key={index} className="flex items-start text-gray-400 text-sm">
+                                    <li key={index} className="flex items-start text-gray-400 text-sm md:text-left">
                                         <span className="mr-3 text-primary mt-1 text-xs">▹</span>
                                         <span className="leading-relaxed text-xs md:text-sm">{item}</span>
                                     </li>
