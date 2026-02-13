@@ -13,7 +13,7 @@ const WorkExperienceItem = ({
 }) => {
     return (
         <div className="w-full relative group">
-            <div className="glass hover:bg-dark-100/40 p-8 rounded-3xl transition-all duration-300 hover:border-primary/30 border border-white/5 relative overflow-hidden group-hover:shadow-[0_0_20px_-5px_rgba(0,243,255,0.1)]">
+            <div className="md:glass hover:bg-dark-100/40 p-0 md:p-8 rounded-none md:rounded-3xl transition-all duration-300 md:hover:border-primary/30 md:border md:border-white/5 border-b border-white/10 pb-8 md:pb-8 relative overflow-hidden group-hover:shadow-[0_0_20px_-5px_rgba(0,243,255,0.1)]">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[60px] -z-10 group-hover:bg-primary/10 transition-colors"></div>
 
                 <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8">
