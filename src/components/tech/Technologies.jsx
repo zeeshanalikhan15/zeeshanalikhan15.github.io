@@ -94,7 +94,7 @@ const Technologies = () => {
             {tech.category === 'Contact Center Platforms' ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {tech.items.map((platform, platformIndex) => (
-                  <div key={platformIndex} className="bg-dark-100/50 p-6 rounded-xl hover:bg-dark-100/80 transition-colors border border-white/5 text-left">
+                  <div key={platformIndex} className="md:bg-dark-100/50 p-0 md:p-6 md:rounded-xl md:hover:bg-dark-100/80 transition-colors md:border md:border-white/5 text-left border-b border-white/10 md:border-b-0 pb-6 md:pb-0 mb-6 md:mb-0">
                     <div className="flex items-center mb-3">
                       <div className="text-primary text-xl mr-3">
                         {platformIcons[platform.platform.split(' ')[0]] || <FaDatabase />}
@@ -103,7 +103,7 @@ const Technologies = () => {
                     </div>
                     <p className="text-sm text-gray-400 mb-4 text-left">{platform.description}</p>
 
-                    <div className="space-y-3">
+                    <div className="space-y-3 pt-4 md:pt-0 border-t border-white/5 md:border-t-0 mt-4 md:mt-0">
                       <div>
                         <h5 className="text-xs font-semibold text-secondary uppercase tracking-wider mb-1 text-left">APIs</h5>
                         <div className="flex flex-wrap gap-2 justify-start">
