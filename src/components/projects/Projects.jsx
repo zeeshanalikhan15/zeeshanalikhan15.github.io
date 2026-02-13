@@ -37,7 +37,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="my-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="my-10 md:my-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 className="text-4xl sm:text-5xl font-heading font-bold text-center mb-16">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Projects</span>
       </h2>
@@ -46,7 +46,7 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className={`glass p-6 rounded-2xl relative transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-[0_0_25px_-5px_rgba(0,243,255,0.2)] border border-white/5 ${highlightedProject === project.anchorId ? 'ring-2 ring-primary shadow-[0_0_30px_rgba(0,243,255,0.4)]' : ''
+            className={`md:glass p-0 md:p-6 rounded-none md:rounded-2xl relative transition-all duration-300 md:hover:transform md:hover:-translate-y-2 md:hover:shadow-[0_0_25px_-5px_rgba(0,243,255,0.2)] md:border md:border-white/5 border-b border-white/10 pb-8 md:pb-6 ${highlightedProject === project.anchorId ? 'ring-2 ring-primary shadow-[0_0_30px_rgba(0,243,255,0.4)]' : ''
               }`}
           >
             <span id={project.anchorId} className="absolute -top-28"></span> {/* Anchor placement */}

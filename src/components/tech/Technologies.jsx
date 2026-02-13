@@ -74,14 +74,14 @@ const developmentToolsIcons = {
 
 const Technologies = () => {
   return (
-    <section id="technologies" className="my-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="technologies" className="my-10 md:my-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 className="text-4xl sm:text-5xl font-heading font-bold text-center mb-16">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Technologies</span>
       </h2>
 
       <div className="space-y-12">
         {technologiesData.map((tech, index) => (
-          <div key={index} className="glass p-8 rounded-3xl relative overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_-10px_rgba(188,19,254,0.3)] border border-white/5">
+          <div key={index} className="md:glass p-0 md:p-8 rounded-none md:rounded-3xl relative overflow-hidden transition-all duration-300 md:hover:shadow-[0_0_30px_-10px_rgba(188,19,254,0.3)] md:border md:border-white/5 border-b border-white/10 pb-8 md:pb-8">
             <div className="absolute top-0 right-0 w-40 h-40 bg-secondary/10 rounded-full blur-[60px] -z-10"></div>
 
             <div className="flex items-center mb-8 border-b border-white/10 pb-4">

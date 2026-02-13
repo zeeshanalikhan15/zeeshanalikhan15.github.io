@@ -4,7 +4,7 @@ import { contactInfoData } from '../../data/data';
 
 function ContactInfo() {
   return (
-    <section id="contact" className="mt-20 py-20 bg-black/40 border-t border-white/5 relative">
+    <section id="contact" className="mt-10 md:mt-20 py-10 md:py-20 bg-black/40 border-t border-white/5 relative">
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent pointer-events-none"></div>
 
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">

@@ -5,13 +5,13 @@ import fastLogo from '../../assets/fast-nuces-logo.png';
 
 const Education = () => {
     return (
-        <section id="education" className="my-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section id="education" className="my-10 md:my-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl sm:text-5xl font-heading font-bold text-center mb-16">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Education</span>
             </h2>
             <div className="space-y-10">
                 {educationData.map((education, index) => (
-                    <div key={index} className="glass p-8 rounded-3xl relative overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-300">
+                    <div key={index} className="md:glass p-0 md:p-8 rounded-none md:rounded-3xl relative overflow-hidden md:border md:border-white/5 md:hover:border-primary/30 transition-all duration-300 border-b border-white/10 pb-8 md:pb-8">
                         <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-[50px] -z-10"></div>
 
                         <div className="flex flex-col md:flex-row items-center md:items-start mb-8 text-center md:text-left">
