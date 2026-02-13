@@ -2,7 +2,7 @@ import React from 'react';
 
 const Overview = () => {
     return (
-        <section id="overview" className="my-10 md:my-20 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section id="overview" className="my-10 md:my-20 w-full max-w-none px-4 sm:px-6 md:px-12 lg:px-24">
             <div className="md:glass p-6 md:p-10 rounded-none md:rounded-3xl relative overflow-hidden text-left md:border md:border-white/5 md:hover:border-primary/20 transition-colors duration-500">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-primary opacity-50"></div>
 
