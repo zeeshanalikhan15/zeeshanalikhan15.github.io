@@ -23,11 +23,11 @@ const WorkExperienceItem = ({
                             {icon}
                         </div>
                         <div>
-                            <h3 className="text-xl md:text-2xl font-bold text-white mb-1 leading-tight">{title}</h3>
-                            <div className="flex flex-wrap items-center text-sm text-gray-400 gap-2 md:gap-3">
+                            <h3 className="text-xl md:text-2xl font-bold text-white mb-1 leading-tight text-left">{title}</h3>
+                            <div className="flex flex-col md:flex-row md:items-center text-sm text-gray-400 gap-1 md:gap-3 text-left">
                                 <span className="font-medium text-secondary">@ {company}</span>
                                 <span className="hidden md:inline">•</span>
-                                <span className="w-full md:w-auto block md:inline">{location}</span>
+                                <span>{location}</span>
                             </div>
                         </div>
                     </div>
