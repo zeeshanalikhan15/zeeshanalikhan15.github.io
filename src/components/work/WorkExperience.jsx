@@ -13,14 +13,10 @@ const WorkExperience = () => {
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Work Experience</span>
       </h2>
 
-      {/* Timeline Line */}
-      <div className="absolute left-4 md:left-1/2 top-32 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-transparent hidden md:block opacity-30"></div>
-
-      <div className="space-y-12 relative">
+      <div className="space-y-8 relative">
         {workExperienceData.map((experience, index) => {
           const Icon = avatarIcons[index % avatarIcons.length];
           const colorClass = avatarColors[index % avatarColors.length];
-          const isLeft = index % 2 === 0;
 
           // Filter projects related to the current job experience based on company and role (case-insensitive)
           const relatedProjects = projectData.filter(
@@ -33,7 +29,6 @@ const WorkExperience = () => {
             <WorkExperienceItem
               key={index}
               icon={<Icon className={`text-2xl ${colorClass}`} />}
-              isLeftAligned={isLeft}
               title={experience.title}
               date={experience.date}
               company={experience.company}

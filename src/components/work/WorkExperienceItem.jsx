@@ -2,7 +2,6 @@ import React from 'react';
 
 const WorkExperienceItem = ({
     icon,
-    isLeftAligned,
     title,
     date,
     company,
@@ -13,65 +12,74 @@ const WorkExperienceItem = ({
     projects,
 }) => {
     return (
-        <div className={`flex flex-col md:flex-row ${isLeftAligned ? 'md:flex-row-reverse' : ''} items-center w-full group`}>
-            {/* Timeline Dot */}
-            <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-dark border-2 border-primary z-10 group-hover:scale-150 group-hover:bg-primary transition-all duration-300 shadow-[0_0_10px_rgba(0,243,255,0.5)]"></div>
+        <div className="w-full relative group">
+            <div className="glass hover:bg-dark-100/40 p-8 rounded-3xl transition-all duration-300 hover:border-primary/30 border border-white/5 relative overflow-hidden group-hover:shadow-[0_0_20px_-5px_rgba(0,243,255,0.1)]">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[60px] -z-10 group-hover:bg-primary/10 transition-colors"></div>
 
-            <div className={`w-full md:w-1/2 ${isLeftAligned ? 'md:pl-12' : 'md:pr-12'}`}>
-                <div className="glass hover:bg-dark-100/40 p-6 rounded-2xl transition-all duration-300 hover:border-primary/30 border border-white/5 relative overflow-hidden group-hover:shadow-[0_0_20px_-5px_rgba(0,243,255,0.1)]">
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-[40px] -z-10 group-hover:bg-primary/10 transition-colors"></div>
-
-                    <div className="flex items-center space-x-4 mb-4">
-                        <div className="p-3 rounded-full bg-white/5 border border-white/10 text-primary">
+                <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8">
+                    <div className="flex items-center gap-6">
+                        <div className="p-4 rounded-2xl bg-white/5 border border-white/10 text-primary text-3xl">
                             {icon}
                         </div>
                         <div>
-                            <h3 className="text-xl font-bold text-white">{title}</h3>
-                            <p className="text-sm text-primary">{date}</p>
-                        </div>
-                    </div>
-
-                    <div className="mb-4">
-                        <span className="text-sm font-medium text-gray-400">@ {company}</span>
-                        <span className="text-sm text-gray-500 mx-2">|</span>
-                        <span className="text-sm text-gray-500">{location}</span>
-                    </div>
-
-                    <p className="text-gray-300 mb-4 leading-relaxed text-sm">{description}</p>
-
-                    <div className="mb-4">
-                        <p className="text-sm font-semibold text-white mb-2">Responsibilities:</p>
-                        <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-                            {responsibilities.map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    <div className="mb-4">
-                        <p className="text-sm font-semibold text-white mb-2">Tools:</p>
-                        <p className="text-sm text-gray-400">{tools}</p>
-                    </div>
-
-                    {projects.length > 0 && (
-                        <div>
-                            <p className="text-sm font-semibold text-white mb-2">Key Projects:</p>
-                            <div className="flex flex-wrap gap-2">
-                                {projects.map((project, index) => (
-                                    <a
-                                        key={index}
-                                        href={`#${project.anchorId}`}
-                                        className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20"
-                                    >
-                                        {project.title}
-                                    </a>
-                                ))}
+                            <h3 className="text-2xl font-bold text-white mb-1">{title}</h3>
+                            <div className="flex items-center text-sm text-gray-400 gap-3">
+                                <span className="font-medium text-secondary">@ {company}</span>
+                                <span>•</span>
+                                <span>{location}</span>
                             </div>
                         </div>
-                    )}
+                    </div>
+                    <div className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-primary font-mono text-sm whitespace-nowrap self-start md:self-center">
+                        {date}
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="lg:col-span-2 space-y-6">
+                        <div>
+                            <h4 className="text-lg font-semibold text-white mb-3">Overview</h4>
+                            <p className="text-gray-300 leading-relaxed text-base">{description}</p>
+                        </div>
+
+                        <div>
+                            <h4 className="text-lg font-semibold text-white mb-3">Key Responsibilities</h4>
+                            <ul className="grid grid-cols-1 gap-2">
+                                {responsibilities.map((item, index) => (
+                                    <li key={index} className="flex items-start text-gray-400 text-sm">
+                                        <span className="mr-3 text-primary mt-1.5 text-xs">▹</span>
+                                        <span className="leading-relaxed">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="space-y-6">
+                        <div>
+                            <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-3">Technologies</h4>
+                            <p className="text-sm text-gray-400 leading-relaxed">{tools}</p>
+                        </div>
+
+                        {projects.length > 0 && (
+                            <div>
+                                <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-3">Related Projects</h4>
+                                <div className="flex flex-wrap gap-2">
+                                    {projects.map((project, index) => (
+                                        <a
+                                            key={index}
+                                            href={`#${project.anchorId}`}
+                                            className="text-xs px-3 py-1.5 rounded-lg bg-white/5 text-gray-300 hover:text-white hover:bg-white/10 transition-colors border border-white/10 hover:border-primary/30"
+                                        >
+                                            {project.title}
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
-            <div className="w-full md:w-1/2"></div>
         </div>
     );
 };

@@ -39,6 +39,14 @@ export default function Navigation() {
     setCurrent(name);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+    setCurrent('');
+  };
+
   return (
     <Disclosure as="nav" className="fixed top-4 left-0 right-0 mx-auto w-[95%] max-w-7xl rounded-2xl glass z-50 transition-all duration-300" ref={navRef}>
       {({ open }) => (
@@ -58,7 +66,7 @@ export default function Navigation() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
-                  <h1 className="text-xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary cursor-default">
+                  <h1 onClick={scrollToTop} className="text-xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary cursor-pointer hover:opacity-80 transition-opacity">
                     ZAK
                   </h1>
                 </div>
