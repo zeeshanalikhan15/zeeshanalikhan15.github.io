@@ -42,7 +42,7 @@ const Education = () => {
                                 <h4 className="text-lg font-semibold text-white mb-4 border-b border-white/10 pb-2 text-left">Academic Projects</h4>
                                 <div className="space-y-6">
                                     {education.projects.map((project, projIndex) => (
-                                        <div key={projIndex} className="bg-dark-100/30 p-4 rounded-xl border border-white/5 text-left">
+                                        <div key={projIndex} className="md:bg-dark-100/30 p-0 md:p-4 md:rounded-xl md:border md:border-white/5 text-left border-b border-white/10 md:border-b-0 pb-4 md:pb-0 mb-4 md:mb-0">
                                             <div className="flex items-center mb-2">
                                                 <div className="text-accent mr-3 text-xl">
                                                     {project.title.includes('Compiler') ? <FaCode /> : <FaNewspaper />}
