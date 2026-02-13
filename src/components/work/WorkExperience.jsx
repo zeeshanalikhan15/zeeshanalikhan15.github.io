@@ -8,8 +8,8 @@ const WorkExperience = () => {
   const avatarColors = ['text-primary', 'text-secondary', 'text-accent', 'text-primary-dim'];
 
   return (
-    <section id="work-experience" className="my-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-      <h2 className="text-4xl sm:text-5xl font-heading font-bold text-center mb-16">
+    <section id="work-experience" className="my-10 md:my-20 w-full max-w-none px-4 sm:px-6 md:px-12 lg:px-24 relative">
+      <h2 className="text-4xl sm:text-5xl font-heading font-bold text-left mb-16">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Work Experience</span>
       </h2>
 
