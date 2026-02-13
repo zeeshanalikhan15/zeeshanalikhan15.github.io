@@ -12,9 +12,9 @@ function ContactInfo() {
         <p className="text-xl text-gray-400 mb-12 max-w-2xl mr-auto text-left">{contactInfoData.description}</p>
 
         <div className="flex flex-col md:flex-row justify-start items-center gap-8 mb-16">
-          <a href={`mailto:${contactInfoData.email}`} className="group flex items-center gap-3 px-6 py-4 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300">
-            <FaEnvelope className="text-2xl text-gray-400 group-hover:text-primary transition-colors" />
-            <span className="text-lg text-gray-300 group-hover:text-white transition-colors">{contactInfoData.email}</span>
+          <a href={`mailto:${contactInfoData.email}`} className="group flex items-center gap-3 px-4 md:px-6 py-3 md:py-4 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 max-w-full overflow-hidden">
+            <FaEnvelope className="text-xl md:text-2xl text-gray-400 group-hover:text-primary transition-colors flex-shrink-0" />
+            <span className="text-sm sm:text-base md:text-lg text-gray-300 group-hover:text-white transition-colors truncate">{contactInfoData.email}</span>
           </a>
         </div>
 
