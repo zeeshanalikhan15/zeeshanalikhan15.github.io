@@ -49,7 +49,7 @@ export default function Navigation() {
 
   return (
     <Disclosure as="nav" className="fixed top-4 left-0 right-0 mx-auto w-[95%] max-w-7xl rounded-2xl glass z-50 transition-all duration-300" ref={navRef}>
-      {({ open }) => (
+      {({ open, close }) => (
         <>
           <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
@@ -83,7 +83,7 @@ export default function Navigation() {
             <div className="space-y-1 px-2 pb-3 pt-2">
               <NavigationLinks navigation={navigationLinks} current={current} handleClick={(e, href, name) => {
                 handleClick(e, href, name);
-                // Close panel logic would ideally go here if we had access to the close function
+                close();
               }} />
             </div>
           </Disclosure.Panel>
