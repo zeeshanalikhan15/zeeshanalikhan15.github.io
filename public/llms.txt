@@ -1,0 +1,28 @@
+# Zeeshan Ali Khan
+
+> Senior Software Engineer & Conversational AI Engineer in Berlin, building voice and chat AI agents that handle real customer conversations — backed by 12+ years of real-time contact center and telephony systems.
+
+## About
+
+Zeeshan Ali Khan is a Senior Software Engineer and Conversational AI Engineer based in Berlin, Germany. He builds production voice and chat AI agents (LLMs, speech-to-text, text-to-speech) on top of deep telephony and contact-center experience. He understands both sides of a voice agent: the AI and the telephony it runs on.
+
+## Quick facts
+
+- **Location:** Berlin, Germany
+- **Current role:** Senior Software Engineer, virtualQ (Nov 2024 – Present)
+- **Experience:** 12+ years (since June 2014)
+- **Education:** BS Computer Science, FAST-NUCES Lahore (2010–2014)
+- **Email:** ZeeshanAliKhan15@gmail.com
+
+## Sections
+
+- [Overview](https://zeeshanalikhan15.github.io/#overview): About Me and career summary
+- [Work Experience](https://zeeshanalikhan15.github.io/#work-experience): virtualQ (Conversational AI + CTI connectors) and Afiniti (contact-center integrations)
+- [Projects](https://zeeshanalikhan15.github.io/#projects): Conversational Voice AI Agent Platform and contact-center connectors
+- [Technologies](https://zeeshanalikhan15.github.io/#technologies): Voice AI & LLMs, Telephony & Contact Center, Languages
+- [Education](https://zeeshanalikhan15.github.io/#education): FAST-NUCES Lahore and academic projects
+- [Contact](https://zeeshanalikhan15.github.io/#contact): Email, LinkedIn, GitHub, Website
+
+## Key skills
+
+Conversational AI, Voice AI, Chat Agents, AI Agents, LLMs, LangChain, LangGraph, Pipecat, Retell AI, Twilio, SignalWire, n8n, Telephony, VoIP, SIP, IVR, CTI, Contact Center, CCaaS, Real-time systems, Distributed systems, C#/.NET, C++, Java, Python, Ruby on Rails, React, Node.js

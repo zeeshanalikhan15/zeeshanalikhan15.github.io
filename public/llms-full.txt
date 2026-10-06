@@ -1,0 +1,86 @@
+# Zeeshan Ali Khan — Full Profile
+
+Senior Software Engineer & Conversational AI Engineer based in Berlin, Germany.
+Email: ZeeshanAliKhan15@gmail.com
+LinkedIn: https://www.linkedin.com/in/zeeshanalikhan15
+GitHub: https://github.com/zeeshanalikhan15
+Website: https://zeeshanalikhan15.github.io/
+
+## Positioning
+
+Senior Software Engineer and Conversational AI Engineer who builds voice and chat AI agents that handle real customer conversations, backed by 12+ years of real-time contact center systems.
+
+His edge: he understands both sides of a voice agent — the AI and the telephony it runs on.
+
+He is an applied-AI engineer (not ML research): he builds with existing models (LLMs, speech-to-text, text-to-speech), choosing, combining, prompting, orchestrating and evaluating them in production.
+
+## Career journey
+
+1. **Afiniti (2014–2021):** Grew from Analyst to Principal Software Engineer, building real-time integrations that connected Afiniti's AI routing platform to enterprise contact centers.
+2. **virtualQ (2018–2024):** Built real-time CTI connectors between a cloud callback platform and many contact center platforms.
+3. **virtualQ (2024–present):** Moved into conversational AI, building voice and chat AI agents on the same platform.
+
+## Experience
+
+### Senior Software Engineer — virtualQ (Berlin · Nov 2024 – Present)
+
+- Built production conversational voice agents using Pipecat, Twilio, AWS Transcribe, AWS Bedrock and Anthropic models, with live phone deployment and human handoff.
+- Designed multi-step agent dialogues with Pipecat Flows, scoping context and tool calls to each step so calls stay predictable and test cases are reproducible.
+- Built AI agent workflows (multi-step logic, tool calling, automations) with LangChain and LangGraph.
+- Added speech-to-text and real-time translation with Deepgram, AWS Transcribe and AWS Translate; built Retell AI phone agents.
+- Reduced voice agent costs with spam-call blocking on Twilio and SignalWire, and by connecting SignalWire directly to Retell AI.
+- Built a kiosk-style, no-code agent builder that turns a customer's key business functions into a working agent in a few clicks.
+- Full-stack features with Ruby on Rails, React and Node.js; code reviews and mentoring junior developers.
+
+### Call Center Integration Developer — virtualQ (Remote · Aug 2018 – Oct 2024)
+
+- Built multi-threaded, async C#/.NET connectors syncing live agent, caller and call data between enterprise contact centers (Avaya Elite, AACC, CIE, Voxtron, Asterisk) and the virtualQ cloud callback platform.
+- Built an Asterisk connector that lets virtualQ connect to any ACD over SIP with no client-side changes, similar to Twilio BYOC.
+- Built and published the virtualQ.Net REST API client library and a connector auto-updater on NuGet.
+
+### Afiniti (Lahore, Pakistan · Jun 2014 – Oct 2021)
+
+Principal Software Engineer (Apr 2021 – Oct 2021), Senior Software Engineer (Nov 2017 – Mar 2021), Software Engineer (Sep 2016 – Nov 2017), Analyst Software Engineer (Jun 2014 – Aug 2016).
+
+- Built real-time integrations in C#/.NET, C++ and Java connecting Afiniti's AI routing platform to enterprise contact centers on Avaya (AES, CM, TSAPI/DMCC, ASAI, Aura, POM), Genesys PureConnect (ININ), Genesys PureCloud and Amazon Connect.
+- Developed proxies, web services and multi-threaded distributed applications with TCP/IP socket programming.
+- Built switch simulators and multi-agent apps to load test call routing at scale.
+
+## Featured projects
+
+### Conversational Voice AI Agent Platform (flagship)
+End-to-end voice and chat AI agents for contact center customers, from telephony to UI. Live calls over Twilio and SignalWire, speech-to-text and real-time translation, LLM conversations as multi-step flows with scoped tools, human handoff, spam-call blocking, n8n automations, and a kiosk-style no-code agent builder.
+Tech: Pipecat, Pipecat Flows, LangChain, LangGraph, Retell AI, Twilio, SignalWire, AWS Transcribe, AWS Bedrock, Anthropic Claude, Deepgram, AWS Translate, n8n, React.
+
+### Contact center connectors (virtualQ)
+Avaya Elite, Avaya AACC, Avaya CIE, Voxtron QConnect, and vQube Asterisk connectors; virtualQ.Net REST client and Connector Auto Updater.
+Tech: C#, DMCC, AES, CM, SMS, TCP, Multicast, REST, SOAP, IVR, Asterisk AMI/AGI/ARI, SIP.
+
+### Afiniti integrations
+Genesys PureConnect (ININ) integration, Avaya Elite Simulator, PureConnect Simulator, X-Agent Application, and Agent Application.
+Tech: C#, IceLib API, Dialer API, ASAI protocol, TCP async sockets.
+
+### Academic
+- Automated Text Positioning for Urdu Newspaper Headlines (Final Year Project; 2nd at Softec'14, FAST Lahore).
+- Compiler: a basic compiler for a subset of C++ (Java, CFG, regular expressions).
+
+## Skills
+
+- **Voice AI & LLMs:** Pipecat, Pipecat Flows, LangChain, LangGraph, Retell AI, LiveKit, Deepgram, AWS Transcribe, AWS Polly, AWS Translate, AWS Bedrock, Anthropic Claude, OpenAI, Groq, prompt engineering, tool calling, RAG, MCP, agent evaluation.
+- **Telephony & Contact Center:** Twilio, SignalWire, SIP, WebRTC, IVR, CTI, Asterisk, Amazon Connect, Avaya, Genesys PureConnect, Genesys PureCloud, Voxtron VCC.
+- **Languages:** C#, C++, Java, Python, Ruby, JavaScript, TypeScript, SQL.
+- **Backend & Systems:** .NET/.NET Core, WPF, WCF, Node.js, Ruby on Rails, Sidekiq, REST, SOAP, WebSockets, TCP/IP sockets, multi-threading, real-time and distributed systems.
+- **Frontend:** React, Next.js, Tailwind CSS.
+- **Data, Cloud & Automation:** PostgreSQL, MySQL, Redis, AWS, Docker, n8n.
+
+## Education
+
+BS Computer Science, National University of Computer and Emerging Science (FAST-NUCES), Lahore, Pakistan (2010–2014).
+
+## Certification
+
+Certified Twilio Platform Developer, Twilio (Feb 2022).
+
+## Languages
+
+English (fluent), Urdu (native), German (A1, currently learning).
