@@ -1,5 +1,5 @@
 import './ContactInfo.css';
-import { FaEnvelope, FaLinkedin, FaGithub, FaPhone, FaGlobe, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaGlobe, FaMapMarkerAlt } from 'react-icons/fa';
 import { contactInfoData } from '../../data/data';
 
 function ContactInfo() {
@@ -19,10 +19,6 @@ function ContactInfo() {
           <a href={`mailto:${contactInfoData.email}`} className="group flex items-center gap-3 px-4 md:px-6 py-3 md:py-4 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 max-w-full overflow-hidden">
             <FaEnvelope className="text-xl md:text-2xl text-gray-400 group-hover:text-primary transition-colors flex-shrink-0" />
             <span className="text-sm sm:text-base md:text-lg text-gray-300 group-hover:text-white transition-colors truncate">{contactInfoData.email}</span>
-          </a>
-          <a href={`tel:${contactInfoData.phone.replace(/\s/g, '')}`} className="group flex items-center gap-3 px-4 md:px-6 py-3 md:py-4 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 max-w-full overflow-hidden">
-            <FaPhone className="text-xl md:text-2xl text-gray-400 group-hover:text-primary transition-colors flex-shrink-0" />
-            <span className="text-sm sm:text-base md:text-lg text-gray-300 group-hover:text-white transition-colors truncate">{contactInfoData.phone}</span>
           </a>
           <a href={contactInfoData.website} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 px-4 md:px-6 py-3 md:py-4 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 max-w-full overflow-hidden">
             <FaGlobe className="text-xl md:text-2xl text-gray-400 group-hover:text-primary transition-colors flex-shrink-0" />
