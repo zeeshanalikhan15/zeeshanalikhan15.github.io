@@ -25,4 +25,4 @@ Zeeshan Ali Khan is a Senior Software Engineer and Conversational AI Engineer ba
 
 ## Key skills
 
-Conversational AI, Voice AI, Chat Agents, AI Agents, LLMs, LangChain, LangGraph, Pipecat, Retell AI, Twilio, SignalWire, n8n, Telephony, VoIP, SIP, IVR, CTI, Contact Center, CCaaS, Real-time systems, Distributed systems, C#/.NET, C++, Java, Python, Ruby on Rails, React, Node.js
+Conversational AI, Voice AI, Chat Agents, AI Agents, LLMs, LangChain, LangGraph, Pipecat, Pipecat Flows, Retell AI, LiveKit, Deepgram, AWS Transcribe, AWS Polly, AWS Translate, AWS Bedrock, Anthropic Claude, OpenAI, Groq, Prompt Engineering, Tool Calling, RAG, MCP, Agent Evaluation, Twilio, SignalWire, n8n, Telephony, VoIP, SIP, WebRTC, IVR, CTI, Contact Center, CCaaS, Real-time systems, Distributed systems, C#/.NET, C++, Java, Python, TypeScript, Ruby on Rails, React, Node.js
