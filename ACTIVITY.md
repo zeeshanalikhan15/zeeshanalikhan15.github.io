@@ -22,3 +22,10 @@ Running log of changes to this project, newest last. Do not delete old entries.
 - Fixed hardcoded stale content the redesign introduced: `Overview.jsx` "About Me" said "VoIP & Contact Center" (rewrote to Conversational AI); `index.html` SEO title/meta/OpenGraph/Twitter/JSON-LD said "VoIP Specialist" (rewrote, fixed placeholder phone `+49-xxx-xxx-xxxx` → real number, refreshed keywords + structured data).
 - Fixed 7 connector-era project `role` values → "Call Center Integration Developer" so "Related Projects" still link after the role rename.
 - `npm run build` passes; JSON-LD validated as well-formed JSON.
+
+## 2026-10-06 — Privacy: removed phone number and refreshed footer
+
+- Removed the phone number from the contact section, `contactInfoData`, and JSON-LD `"telephone"` (user request: don't show the number).
+- Scanned the full history and all branches for a Pakistani number (`+92`, `0092`, `03xx`, landline patterns) — none found; only false positives (SVG coordinates, GitHub asset UUIDs).
+- Scrubbed the German number from git history via `git filter-branch` and force-pushed. Content + authorship verified unchanged; commit hashes rewritten.
+- Updated footer to "Designed with ❤ and AI".

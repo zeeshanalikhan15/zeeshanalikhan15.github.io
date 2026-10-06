@@ -21,3 +21,9 @@ Key decisions and their reasons. Do not delete old entries.
 **Decision:** Fast-forward `main` to `origin/main` before applying content edits; never edit a stale checkout.
 
 **Why:** The local clone was 26 commits behind `origin/main` (theme/SEO redesigns). Because `src/data/data.js` was unchanged across the redesign, the content edits survived the fast-forward cleanly — but the component tweaks and hardcoded `Overview.jsx`/`index.html` text had to be redone against the new theme.
+
+## 2026-10-06 — No phone number on the website
+
+**Decision:** The portfolio shows no phone number (contact section and structured data), and the number was scrubbed from public git history.
+
+**Why:** Zeeshan does not want his personal mobile number publicly visible. Contact is via email, LinkedIn, GitHub, and the site itself.
