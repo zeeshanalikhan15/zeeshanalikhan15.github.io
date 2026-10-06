@@ -40,7 +40,7 @@ function ContactInfo() {
         <p className="mt-16 text-sm text-gray-600">
           © {new Date().getFullYear()} Zeeshan Ali Khan. All rights reserved.
           <br />
-          Designed with <span className="text-accent animate-pulse">❤</span> and React.
+          Designed with <span className="text-accent animate-pulse">❤</span> and AI.
         </p>
       </div>
     </section>
