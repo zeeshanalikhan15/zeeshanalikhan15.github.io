@@ -1,6 +1,6 @@
 import React from 'react';
 import { educationData } from '../../data/data';
-import { FaBook, FaNewspaper, FaCode } from 'react-icons/fa';
+import { FaBook, FaNewspaper, FaCode, FaGithub } from 'react-icons/fa';
 import fastLogo from '../../assets/fast-nuces-logo.png';
 
 const Education = () => {
@@ -47,7 +47,16 @@ const Education = () => {
                                                 <div className="text-accent mr-3 text-xl">
                                                     {project.title.includes('Compiler') ? <FaCode /> : <FaNewspaper />}
                                                 </div>
-                                                <h5 className="text-md font-bold text-white text-left">{project.title}</h5>
+                                                <h5 className="text-md font-bold text-white text-left">
+                                                    {project.link ? (
+                                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-primary transition-colors">
+                                                            {project.title}
+                                                            <FaGithub className="text-gray-500 text-sm" />
+                                                        </a>
+                                                    ) : (
+                                                        project.title
+                                                    )}
+                                                </h5>
                                             </div>
                                             <p className="text-sm text-gray-400 mb-2 leading-relaxed text-left">{project.description}</p>
                                             <p className="text-xs text-gray-500 font-mono text-left">

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { FaCode, FaServer, FaCloud, FaPhoneAlt, FaProjectDiagram, FaSyncAlt, FaCogs, FaDatabase, FaTools, FaNetworkWired, FaHeadset, FaUsers } from 'react-icons/fa'; // Added more unique icons
+import { FaCode, FaServer, FaCloud, FaPhoneAlt, FaProjectDiagram, FaSyncAlt, FaCogs, FaDatabase, FaTools, FaNetworkWired, FaHeadset, FaUsers, FaRobot, FaChartBar } from 'react-icons/fa'; // Added more unique icons
 import { projectData } from '../../data/data';
 
 const projectIcons = {
+  'Conversational Voice AI Agent Platform': <FaRobot className="text-blue-500 mr-2 text-xl" />,
+  'Call Center Dashboard & Production Access Portal': <FaChartBar className="text-teal-500 mr-2 text-xl" />,
   'virtualQ.Net': <FaCogs className="text-blue-500 mr-2 text-xl" />,
   'PureConnect / Genesys / ININ Simulator': <FaServer className="text-green-500 mr-2 text-xl" />,
   'X-Agent Application for ININ': <FaPhoneAlt className="text-purple-500 mr-2 text-xl" />,

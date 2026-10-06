@@ -16,24 +16,22 @@ const Overview = () => {
 
                 <div className="prose prose-lg prose-invert mr-auto px-0 md:px-0 text-left">
                     <p className="text-gray-300 leading-relaxed mb-6 text-left">
-                        I am a <strong>Senior Software Engineer</strong> specializing in <strong>VoIP</strong> and <strong>Contact Center</strong> technologies.
-                        With a passion for solving complex communication challenges, I align advanced technical systems with business needs to drive efficiency and innovation.
+                        I'm a <strong>Senior Software Engineer and Conversational AI Engineer</strong> based in <strong>Berlin</strong>. For 12+ years I've built real-time software that helps businesses talk to their customers — first in enterprise contact centers, and now with AI.
                     </p>
                     <p className="text-gray-400 leading-relaxed text-left">
-                        Throughout my career, I have worked with a variety of technologies including Avaya Elite, Avaya CIE, Avaya Aura Contact Center (AACC), Voxtron, Twilio, Asterisk, and custom TCP/IP Network Programming. I thrive on building robust, scalable integrations and seamless user experiences.
+                        Today I build <strong>voice and chat AI agents</strong> that handle real customer conversations — choosing the right LLM, speech-to-text and text-to-speech models, keeping latency low, and testing against real call scenarios. I understand both sides of a voice agent: the AI and the telephony it runs on.
                     </p>
                 </div>
 
                 <div className="mt-10 flex flex-wrap justify-start gap-4 px-0 md:px-0">
-                    <div className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-primary font-mono">
-                        #ProblemSolver
-                    </div>
-                    <div className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-secondary font-mono">
-                        #VoIPSpecialist
-                    </div>
-                    <div className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-accent font-mono">
-                        #FullStack
-                    </div>
+                    {['#ConversationalAI', '#VoiceAI', '#ContactCenters', '#Telephony', '#VoIP', '#SIP', '#LLMs', '#LangGraph', '#CTI', '#RealTimeSystems', '#FullStack', '#Berlin'].map((tag, index) => {
+                        const colors = ['text-primary', 'text-secondary', 'text-accent'];
+                        return (
+                            <div key={tag} className={`px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-mono ${colors[index % colors.length]}`}>
+                                {tag}
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </section>

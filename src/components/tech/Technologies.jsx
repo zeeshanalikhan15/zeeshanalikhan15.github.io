@@ -1,10 +1,11 @@
 import React from 'react';
 import { technologiesData } from '../../data/data';
 import { FaCode, FaCogs, FaCloud, FaTools, FaDatabase, FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava, FaReact, FaNodeJs, FaPhoneAlt, FaNetworkWired, FaWindowMaximize, FaGitAlt, FaGithub, FaBitbucket, FaTrello, FaJira, FaSlack, FaMicrosoft, FaHeadset, FaComments } from 'react-icons/fa'; // Added FaComments
-import { SiRuby, SiCplusplus, SiDotnet, SiTailwindcss, SiBoost, SiRubyonrails, SiPostman, SiWireshark, SiConfluence, SiAsterisk } from 'react-icons/si';
+import { SiRuby, SiCplusplus, SiDotnet, SiTailwindcss, SiBoost, SiRubyonrails, SiPostman, SiWireshark, SiConfluence, SiAsterisk, SiTypescript } from 'react-icons/si';
 import { TbBrandCSharp } from 'react-icons/tb';
 
 const categoryIcons = {
+  'Voice AI & LLMs': <FaComments className="text-fuchsia-600 text-3xl mr-4" />,
   Languages: <FaCode className="text-blue-600 text-3xl mr-4" />,
   Frameworks: <FaCogs className="text-green-600 text-3xl mr-4" />,
   'Development Tools': <FaTools className="text-yellow-600 text-3xl mr-4" />,
@@ -19,6 +20,9 @@ const platformIcons = {
   Twilio: <FaCloud className="text-blue-500 mr-2 text-xl" />,
   Asterisk: <SiAsterisk className="text-orange-500 mr-2 text-xl" />,
   Voxtron: <FaTools className="text-green-500 mr-2 text-xl" />,
+  SignalWire: <FaCloud className="text-teal-500 mr-2 text-xl" />,
+  Amazon: <FaCloud className="text-orange-500 mr-2 text-xl" />,
+  Genesys: <FaHeadset className="text-green-600 mr-2 text-xl" />,
 };
 
 const languageIcons = {
@@ -31,6 +35,7 @@ const languageIcons = {
   Python: <FaPython className="text-green-500 mr-2 text-xl" />,
   Java: <FaJava className="text-red-500 mr-2 text-xl" />,
   SQL: <FaDatabase className="text-blue-500 mr-2 text-xl" />,
+  TypeScript: <SiTypescript className="text-blue-600 mr-2 text-xl" />,
 };
 
 const frameworkIcons = {

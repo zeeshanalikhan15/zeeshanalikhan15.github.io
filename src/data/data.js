@@ -1,7 +1,7 @@
 export const headerData = {
     name: "Zeeshan Ali Khan",
-    title: "Problem Solver | Senior Software Engineer | VoIP & Contact Center Specialist",
-    description: "Aligning Advanced Communication Systems with Business Needs"
+    title: "Senior Software Engineer · Conversational AI Engineer | Voice & Chat AI Agents",
+    description: "Voice & chat AI agents built for real customers · Telephony, VoIP & Contact Centers · Berlin, Germany"
 };
 
 export const workExperienceData = [
@@ -10,30 +10,33 @@ export const workExperienceData = [
         title: 'Senior Software Engineer',
         company: 'virtualQ',
         location: 'Full-time, Berlin, Germany',
-        description: 'I work on web applications using Ruby on Rails and React JS.',
+        description: 'I work mainly on conversational AI, building voice and chat AI agents, and also work across the full stack.',
         responsibilities: [
-            'Managing backend and frontend development',
-            'Ensuring client features and requirements are met',
-            'Collaborating with cross-functional teams to deliver high-quality software solutions',
-            'Implementing best practices for software development and deployment',
-            'Conducting code reviews and providing mentorship to junior developers',
+            'Built production conversational voice agents using Pipecat, Twilio, AWS Transcribe, AWS Bedrock and Anthropic models, with live phone deployment and human handoff',
+            'Designed multi-step agent dialogues with Pipecat Flows, scoping context and tool calls to each step so calls stay predictable and reproducible',
+            'Built AI agent workflows (multi-step logic, tool calling, automations) with LangChain and LangGraph',
+            'Added speech-to-text and real-time translation with Deepgram, AWS Transcribe and AWS Translate for multilingual conversations; built Retell AI phone agents',
+            'Reduced voice agent costs with spam-call blocking on Twilio and SignalWire, and by connecting SignalWire directly to Retell AI',
+            'Simplified Twilio and SignalWire connection settings and secured exposed n8n automation webhooks with authentication',
+            'Designed a kiosk-style, no-code agent builder that turns a customer\'s key business functions into a working agent in a few clicks',
+            'Full-stack features with Ruby on Rails, React and Node.js for the customer dashboard and internal tools',
+            'Code reviews and mentoring junior developers',
         ],
-        tools: 'Ruby on Rails, React.js, Node.js, C#, REST APIs, RESTful WebServices, Web Development, Web Services API',
+        tools: 'Pipecat, Pipecat Flows, LangChain, LangGraph, Retell AI, Twilio, SignalWire, Deepgram, AWS Transcribe, AWS Translate, AWS Bedrock, Anthropic Claude, n8n, Python, Ruby on Rails, React, Node.js',
     },
     {
         date: 'Aug 2018 – Oct 2024',
-        title: 'Call Center Developer',
+        title: 'Call Center Integration Developer',
         company: 'virtualQ',
-        location: 'Freelance, Remote',
-        description: 'At virtualQ, I have been responsible for developing and managing integrations of the virtualQ system with various ACDs. My role involves managing client deployments, handling production issues, and maintaining code repositories. I have also developed REST web services and managed SIP communication.',
+        location: 'Remote',
+        description: 'Built multi-threaded, async C#/.NET connectors syncing live agent, caller and call data between enterprise contact centers (Avaya Elite, AACC, CIE, Voxtron, Asterisk) and the virtualQ cloud callback platform.',
         responsibilities: [
-            'Integration development and management',
-            'Client deployment and production issue handling',
-            'Code repository maintenance',
-            'REST web services development',
-            'SIP communication management',
+            'Built real-time CTI connectors reading live stats (EWT, AHT, callers per skill/VDN) and writing data back to switches for callbacks',
+            'Built an Asterisk connector that lets virtualQ connect to any ACD over SIP with no client-side changes, similar to Twilio BYOC',
+            'Built and published the virtualQ.Net REST API client library and a connector auto-updater on NuGet',
+            'Managed client deployments, production issues and code repositories',
         ],
-        tools: 'Avaya Elite, Avaya CIE, Avaya Aura Contact Center (AACC), Voxtron, Twilio, Asterisk, TCP/IP Network Programming',
+        tools: 'C#, .NET, Avaya Elite, Avaya AACC, Avaya CIE, Voxtron, Asterisk, SIP, TCP/IP, REST Web Services',
     },
     {
         date: 'Apr 2021 – Oct 2021',
@@ -46,7 +49,7 @@ export const workExperienceData = [
             'Documentation creation for SI code and ACD implementations',
             'Providing ground knowledge of ACDs to new teams',
         ],
-        tools: 'SI code, ACD implementations',
+        tools: 'C#/.NET, C++, Java, SI code, ACD implementations',
     },
     {
         date: 'Nov 2017 – Mar 2021',
@@ -59,7 +62,7 @@ export const workExperienceData = [
             'Network communication protocol development',
             'Client collaboration in production environments',
         ],
-        tools: 'ININ, Avaya',
+        tools: 'C#/.NET, C++, Java, Avaya (AES, CM, TSAPI/DMCC, ASAI), Genesys PureConnect (IceLib API, Dialer API), Genesys PureCloud, Amazon Connect',
     },
     {
         date: 'Sep 2016 – Nov 2017',
@@ -72,7 +75,7 @@ export const workExperienceData = [
             'Real-time, multi-threaded, and distributed application development',
             'Monitoring call and agent events from the switch',
         ],
-        tools: 'Network switches',
+        tools: 'C#/.NET, C++, Java, TCP/IP socket programming, Multi-threading',
     },
     {
         date: 'June 2014 – Aug 2016',
@@ -85,14 +88,18 @@ export const workExperienceData = [
             'TCP/IP socket programming',
             'Desktop and Windows services application development',
         ],
-        tools: 'TCP/IP, Windows services',
+        tools: 'C#/.NET, C++, Java, TCP/IP, Windows services',
     },
 ];
 
 export const technologiesData = [
     {
+        category: 'Voice AI & LLMs',
+        items: ['Pipecat', 'Pipecat Flows', 'LangChain', 'LangGraph', 'Retell AI', 'LiveKit', 'Deepgram', 'AWS Transcribe', 'AWS Polly', 'AWS Translate', 'AWS Bedrock', 'Anthropic Claude', 'OpenAI', 'Groq', 'Prompt Engineering', 'Tool Calling', 'RAG', 'MCP', 'Agent Evaluation', 'n8n'],
+    },
+    {
         category: 'Languages',
-        items: ['C#', 'Ruby', 'C++', 'JavaScript', 'SQL', 'HTML', 'CSS']
+        items: ['C#', 'Python', 'C++', 'Java', 'JavaScript', 'TypeScript', 'Ruby', 'SQL', 'HTML', 'CSS']
     },
     {
         category: 'Frameworks',
@@ -151,7 +158,9 @@ export const technologiesData = [
                     'Twilio Functions',
                     'TwiML',
                     'Programmable Voice API',
+                    'Twilio Studio',
                     'Elastic SIP Trunking',
+                    'SIP Domains',
                 ],
                 components: [
                     'Programmable Voice for call handling',
@@ -197,11 +206,71 @@ export const technologiesData = [
                     'Custom TCP server for call flow handling',
                 ],
             },
+            {
+                platform: 'SignalWire',
+                description: 'SignalWire APIs for programmable voice and SIP, used for spam-call blocking and connecting directly to Retell AI instead of a costly workaround.',
+                apis: [
+                    'Voice API',
+                    'SIP',
+                ],
+                components: [
+                    'Programmable voice',
+                    'Spam-call blocking',
+                    'SIP for BYOC',
+                ],
+                management: [
+                    'SignalWire Console',
+                ],
+            },
+            {
+                platform: 'Amazon Connect',
+                description: 'Integrated Afiniti\'s AI routing platform with Amazon Connect for enterprise contact centers.',
+                apis: [
+                    'Amazon Connect APIs',
+                ],
+                components: [
+                    'Call routing integration',
+                ],
+                management: [
+                    'Amazon Connect console',
+                ],
+            },
+            {
+                platform: 'Genesys PureCloud',
+                description: 'Integrated Afiniti\'s AI routing platform with Genesys PureCloud for enterprise contact centers.',
+                apis: [
+                    'Genesys Cloud APIs',
+                ],
+                components: [
+                    'Call routing integration',
+                ],
+                management: [
+                    'Genesys Cloud admin',
+                ],
+            },
         ],
     },
 ];
 
 export const projectData = [
+    {
+        title: 'Conversational Voice AI Agent Platform',
+        description: 'End-to-end voice and chat AI agents for contact center customers, from telephony to UI. Live calls over Twilio and SignalWire, speech-to-text and real-time translation, LLM conversations as multi-step flows with scoped tools, human handoff, spam-call blocking, n8n automations, and a kiosk-style no-code agent builder.',
+        technologies: 'Pipecat, Pipecat Flows, LangChain, LangGraph, Retell AI, Twilio, SignalWire, AWS Transcribe, AWS Bedrock, Anthropic Claude, Deepgram, AWS Translate, n8n, React',
+        features: 'Voice & chat AI agents, Live phone deployment, Human handoff, Multi-step LLM flows, Tool calling, Spam-call blocking, No-code agent builder',
+        company: 'virtualQ',
+        role: 'Senior Software Engineer',
+        anchorId: 'project-conversational-voice-ai-agent-platform',
+    },
+    {
+        title: 'Call Center Dashboard & Production Access Portal',
+        description: 'Customer-facing dashboard features and an internal production access application for the virtualQ platform.',
+        technologies: 'React, Node.js, Ruby on Rails, Tailwind, Sidekiq',
+        features: 'Customer dashboard features, Internal production access tooling',
+        company: 'virtualQ',
+        role: 'Senior Software Engineer',
+        anchorId: 'project-call-center-dashboard-production-access',
+    },
     {
         title: 'virtualQ.Net',
         description: 'Developed a C# client implementation of virtualQ API.',
@@ -212,7 +281,7 @@ export const projectData = [
             { label: 'Git', url: 'https://github.com/virtualq/virtualQ.NET' },
         ],
         company: 'virtualQ',
-        role: 'Senior Software Engineer',
+        role: 'Call Center Integration Developer',
         anchorId: 'project-virtualq-net',
     },
     {
@@ -224,7 +293,7 @@ export const projectData = [
             { label: 'Git', url: 'https://github.com/virtualq/Avaya-Elite-Release' },
         ],
         company: 'virtualQ',
-        role: 'Senior Software Engineer',
+        role: 'Call Center Integration Developer',
         anchorId: 'project-avaya-elite-connector',
     },
     {
@@ -236,7 +305,7 @@ export const projectData = [
             { label: 'Git', url: 'https://github.com/virtualq/Avaya-AACC-Multicast-Release' },
         ],
         company: 'virtualQ',
-        role: 'Call Center Developer',
+        role: 'Call Center Integration Developer',
         anchorId: 'project-avaya-aacc-connector',
     },
     {
@@ -248,7 +317,7 @@ export const projectData = [
             { label: 'Git', url: 'https://github.com/virtualq/Avaya-CIE-Release' },
         ],
         company: 'virtualQ',
-        role: 'Call Center Developer',
+        role: 'Call Center Integration Developer',
         anchorId: 'project-avaya-cie-connector',
     },
     {
@@ -260,7 +329,7 @@ export const projectData = [
             { label: 'Git', url: 'https://github.com/virtualq/vQube-Release' },
         ],
         company: 'virtualQ',
-        role: 'Call Center Developer',
+        role: 'Call Center Integration Developer',
         anchorId: 'project-vqube-asterisk-connector',
     },
     {
@@ -272,7 +341,7 @@ export const projectData = [
             { label: 'Git', url: 'https://github.com/virtualq/QConnect-Release' },
         ],
         company: 'virtualQ',
-        role: 'Senior Software Engineer',
+        role: 'Call Center Integration Developer',
         anchorId: 'project-voxtron-qconnect',
     },
     {
@@ -329,7 +398,7 @@ export const projectData = [
             { label: 'Nuget', url: 'https://www.nuget.org/packages/ConnectorAutoUpdater/' },
         ],
         company: 'virtualQ',
-        role: 'Call Center Developer',
+        role: 'Call Center Integration Developer',
         anchorId: 'project-connector-auto-updater',
     },
 ];
@@ -354,7 +423,8 @@ export const educationData = [
                 title: 'Compiler',
                 description: 'It was a project in Compiler Construction course, a basic compiler for a language (subset of C++). It had 3 primitive data types: integers, character, and string. It also handled functions, Print statements, Input statements, and assignment statements.',
                 technologies: 'Java, CFG, Regular Expressions',
-                features: 'Translation Schemes, Byte Code, variables, arrays, IO, and functions'
+                features: 'Translation Schemes, Byte Code, variables, arrays, IO, and functions',
+                link: 'https://github.com/zeeshanalikhan15/Compiler'
             }
         ]
     }
@@ -363,7 +433,9 @@ export const educationData = [
 export const contactInfoData = {
     heading: 'Get in Touch',
     description: 'Feel free to reach out to me through any of the following platforms',
+    location: 'Berlin, Germany',
     email: 'ZeeshanAliKhan15@gmail.com',
+    website: 'https://zeeshanalikhan15.github.io/',
     linkedin: 'https://www.linkedin.com/in/zeeshanalikhan15/',
     linkedinText: 'LinkedIn/ZeeshanAliKhan15',
     github: 'https://github.com/zeeshanalikhan15',
@@ -372,11 +444,11 @@ export const contactInfoData = {
 
 export const graphData = {
     title: 'Technologies and Languages Proficiency (0-10)',
-    skills: ['C#', 'Ruby', 'C++', 'JavaScript', 'SQL', 'HTML', 'CSS', 'Dot Net framework', 'Dot Net core', 'WPF', 'WinForms', 'WCF web services REST/SOAP', 'React.js', 'Node.js'],
+    skills: ['C#', 'Python', 'C++', 'Java', 'JavaScript', 'TypeScript', 'Ruby', 'React', 'Node.js', 'Ruby on Rails', 'Pipecat', 'LangChain', 'LangGraph', 'Twilio', 'Asterisk'],
     proficiencyLabel: 'Proficiency',
-    proficiencyData: [9, 5, 6, 8.5, 8, 7.5, 8, 8.5, 8, 9, 8.5, 5, 7, 6.5],
+    proficiencyData: [9, 7, 6, 7, 8, 7, 8.5, 7.5, 7, 8, 8, 8, 8, 8, 8],
     experienceLabel: 'Years of Experience',
-    experienceData: [9, 2, 6, 4, 6, 8, 5, 7, 9, 3, 4, 3, 2, 1.5],
+    experienceData: [11, 2, 6, 3, 4, 2, 6, 2, 2, 2, 1.5, 1.5, 1.5, 4, 5],
 };
 
 export const navigationLinks = [
